@@ -65,37 +65,50 @@
 
 
 ```
-🏗️ Engineering_Student_Portfolio/
-┃
-┣━━ 📂 app/                    # 🚀 Next.js App Directory
-┃   ┣━━ 📄 layout.tsx          #    Root Layout Component
-┃   ┣━━ 📄 page.tsx            #    Home Page
-┃
-┣━━ 📂 components/             # 🧩 Reusable UI Components
-┃   ┣━━ 📄 Header.tsx          #    Navigation Header
-┃   ┣━━ 📄 Hero.tsx            #    Hero Section
-┃   ┣━━ 📄 Projects.tsx        #    Project Showcase
-┃   ┗━━ 📄 Contact.tsx         #    Contact Form
-┃
-┣━━ 📂 hooks/                  # 🎣 Custom React Hooks
-┃   ┗━━ 📄 useCustomHook.ts    #    Utility Hooks
-┃
-┣━━ 📂 lib/                    # 📚 Utility Libraries
-┃   ┣━━ 📄 utils.ts            #    Helper Functions
-┃   ┗━━ 📄 constants.ts        #    App Constants
-┃
-┣━━ 📂 public/                 # 🖼️ Static Assets
-┃   ┣━━ 📂 images/             #    Image Assets
-┃   ┗━━ 📂 icons/              #    Icon Assets
-┃
-┣━━ 📂 styles/                 # 🎨 Styling Files
-┃   ┗━━ 📄 globals.css         #    Global Styles
-┃
-┗━━ 📄 Configuration Files     # ⚙️ Project Config
-    ┣━━ next.config.js         #    Next.js Config
-    ┣━━ tailwind.config.ts     #    Tailwind Config
-    ┣━━ tsconfig.json          #    TypeScript Config
-    ┗━━ package.json           #    Dependencies
+engineer_portfolio/
+├─ app/
+│  ├─ about/
+│  ├─ blog/
+│  ├─ certificates/
+│  ├─ contact/
+│  ├─ education/
+│  ├─ experience/
+│  ├─ projects/
+│  ├─ skills/
+│  ├─ globals.css
+│  ├─ layout.tsx
+│  └─ page.tsx
+├─ components/
+│  ├─ home/
+│  │  ├─ about-preview.tsx
+│  │  ├─ contact-preview.tsx
+│  │  ├─ hero-section.tsx
+│  │  ├─ projects-preview.tsx
+│  │  └─ skills-preview.tsx
+│  ├─ layout/
+│  │  ├─ footer.tsx
+│  │  └─ navbar.tsx
+│  ├─ ui/               # Reusable UI elements
+│  │  ├─ [~50+ custom components like accordion, button, card, toast, etc.]
+│  └─ theme-provider.tsx
+├─ hooks/
+│  └─ use-toast.ts
+├─ lib/
+│  ├─ constants.ts
+│  ├─ motion.ts
+│  └─ utils.ts
+├─ .eslintrc.json
+├─ .gitignore
+├─ components.json
+├─ next-env.d.ts
+├─ next.config.js
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.js
+├─ tailwind.config.ts
+├─ tsconfig.json
+└─ README.md
+
 ```
 
 
@@ -218,9 +231,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <br>
 
-[![Email](https://img.shields.io/badge/📧_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:niladri.chatterjee@example.com)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/niladri-chatterjee)
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://niladri-chatterjee.dev)
+[![Email](https://img.shields.io/badge/📧_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:code.niladri@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/niladri1)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://niladri1.vercel.app)
 [![GitHub](https://img.shields.io/badge/🐱_GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/niladri-1)
 
 <br>
