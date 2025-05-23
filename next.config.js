@@ -5,6 +5,11 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
+  webpack: (config, { isServer }) => {
+    // Disable cache for both client and server builds
+    config.cache = false;
+    return config;
+  },
 };
 
 module.exports = nextConfig;

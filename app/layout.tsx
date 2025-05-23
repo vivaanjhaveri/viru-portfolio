@@ -20,7 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-		  <link rel="shortcut icon" href="https://www.jissp.ac.in/images/courses-offered/civil-engineering.png" type="image/x-icon" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <div className="relative min-h-screen flex flex-col">
