@@ -48,7 +48,7 @@ export function Navbar() {
 							whileHover={{ scale: 1.05 }}
 							className="font-bold text-2xl text-gradient"
 						>
-							Portfolio
+							Viru Gurudath
 						</motion.div>
 					</Link>
 					<nav className="hidden md:flex gap-6">
@@ -109,11 +109,6 @@ export function Navbar() {
 										<DropdownMenuItem asChild>
 											<Link href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">
 												LinkedIn
-											</Link>
-										</DropdownMenuItem>
-										<DropdownMenuItem asChild>
-											<Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer">
-												Twitter
 											</Link>
 										</DropdownMenuItem>
 									</DropdownMenuContent>

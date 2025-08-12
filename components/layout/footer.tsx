@@ -12,11 +12,7 @@ export function Footer() {
 		{ icon: <Phone className="h-5 w-5" />, href: siteConfig.links.phone, label: 'Phone' },
 		{ icon: <Mail className="h-5 w-5" />, href: siteConfig.links.email, label: 'Email' },
 		{ icon: <Linkedin className="h-5 w-5" />, href: siteConfig.links.linkedin, label: 'LinkedIn' },
-		{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' },
-		{ icon: <MessageSquare className="h-5 w-5" />, href: siteConfig.links.whatsapp, label: 'WhatsApp' },
-		{ icon: <Twitter className="h-5 w-5" />, href: siteConfig.links.twitter, label: 'Twitter' },
-		{ icon: <Facebook className="h-5 w-5" />, href: siteConfig.links.facebook, label: 'Facebook' },
-		{ icon: <Instagram className="h-5 w-5" />, href: siteConfig.links.instagram, label: 'Instagram' },
+		{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' }
 	];
 
 	const navColumns = [
@@ -39,7 +35,6 @@ export function Footer() {
 		{
 			title: 'Connect',
 			links: [
-				{ title: 'Blog', href: '/blog' },
 				{ title: 'Contact', href: '/contact' },
 				{ title: 'Resume', href: '#', download: true },
 			],
@@ -52,7 +47,7 @@ export function Footer() {
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div className="md:col-span-1">
 						<Link href="/" className="inline-block">
-							<span className="text-2xl font-bold text-gradient">Portfolio</span>
+							<span className="text-2xl font-bold text-gradient">Viru Gurudath</span>
 						</Link>
 						<p className="mt-4 text-sm text-muted-foreground">
 							A professional portfolio showcasing my skills, projects, and achievements in engineering.

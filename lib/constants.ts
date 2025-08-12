@@ -32,21 +32,13 @@ export const siteConfig = {
 			href: '/certificates',
 		},
 		{
-			title: 'Blog',
-			href: '/blog',
-		},
-		{
 			title: 'Contact',
 			href: '/contact',
 		},
 	],
 	links: {
 		github: 'https://github.com/yourusername',
-		linkedin: 'https://linkedin.com/in/yourusername',
-		twitter: 'https://twitter.com/yourusername',
-		facebook: 'https://facebook.com/yourusername',
-		instagram: 'https://instagram.com/yourusername',
-		whatsapp: 'https://wa.me/yourphonenumber',
+		linkedin: 'https://www.linkedin.com/in/viru-gurudath/',
 		email: 'mailto:youremail@example.com',
 		phone: 'tel:+1234567890',
 	},

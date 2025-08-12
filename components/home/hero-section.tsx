@@ -58,21 +58,21 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.2)}
 						className="text-3xl md:text-4xl font-bold mb-4 text-primary"
 					>
-						Computer Science Engineering
+						Mechanical and Electrical Engineering
 					</motion.h2>
 
 					<motion.h1
 						variants={fadeIn('up', 0.3)}
 						className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
 					>
-						<span className="text-gradient">John Doe's</span> Portfolio
+						<span className="text-gradient">Viru Gurudath's</span> Portfolio
 					</motion.h1>
 
 					<motion.p
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						A showcase of my projects, skills, and achievements in the field of engineering.
+						A showcase of my projects, skills, and achievements in the fields of mechanical and electrical engineering.
 					</motion.p>
 
 					<motion.div
