@@ -25,11 +25,11 @@ export function AboutPreview() {
 						initial="hidden"
 						whileInView="show"
 						viewport={{ once: true }}
-						className="relative h-[400px] rounded-lg overflow-hidden"
+						className="relative h-[600px] rounded-lg overflow-hidden"
 					>
 						<Image
-							src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
-							alt="Engineer portrait"
+							src="/images/photo.png"
+							alt="Viru Gurudath"
 							fill
 							className="object-cover"
 							sizes="(max-width: 768px) 100vw, 50vw"
