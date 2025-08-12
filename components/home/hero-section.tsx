@@ -85,8 +85,8 @@ export function HeroSection() {
 							</Link>
 						</Button>
 						<Button size="lg" variant="outline" asChild>
-							<Link href="#" download>
-								Download CV <FileDown className="ml-2 h-4 w-4" />
+							<Link href="/public/files/portfolio.pdf" download>
+								Download Portfolio <FileDown className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>
 					</motion.div>
