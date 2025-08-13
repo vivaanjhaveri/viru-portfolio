@@ -62,8 +62,8 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Currently pursuing a Bachelor's degree in Engineering with a focus on
-									practical applications and innovative solutions.
+									Currently Graduated with a Bachelor's degree in Integrated Engineering with a focus on
+									Mechanical and Electrical Engineering.
 								</p>
 							</CardContent>
 						</Card>
@@ -75,7 +75,7 @@ export default function AboutPage() {
 								<h3 className="text-xl font-semibold mb-4">Experience</h3>
 								<p className="text-muted-foreground">
 									Gained valuable experience through internships and projects, working
-									with cutting-edge technologies and methodologies.
+									with cutting-edge technologies and methodologies driving for results.
 								</p>
 							</CardContent>
 						</Card>
@@ -86,7 +86,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Skills</h3>
 								<p className="text-muted-foreground">
-									Proficient in various engineering tools and technologies, with a strong
+									Proficient in various engineering tools and technologies, such as CAD, FEA, CFD, and BIM, with a strong
 									foundation in problem-solving and analytical thinking.
 								</p>
 							</CardContent>

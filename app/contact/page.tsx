@@ -62,15 +62,15 @@ export default function ContactPage() {
 									<div className="space-y-4">
 										<div className="flex items-center">
 											<Phone className="h-5 w-5 text-primary mr-3" />
-											<p className="text-muted-foreground">+1 234 567 890</p>
+											<p className="text-muted-foreground">+1 604 968 5595</p>
 										</div>
 										<div className="flex items-center">
 											<Mail className="h-5 w-5 text-primary mr-3" />
-											<p className="text-muted-foreground">contact@example.com</p>
+											<p className="text-muted-foreground">virugurudath@gmail.com</p>
 										</div>
 										<div className="flex items-center">
 											<MapPin className="h-5 w-5 text-primary mr-3" />
-											<p className="text-muted-foreground">City, Country</p>
+											<p className="text-muted-foreground">Vancouver, Canada</p>
 										</div>
 									</div>
 								</CardContent>
