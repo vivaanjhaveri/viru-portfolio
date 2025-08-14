@@ -12,7 +12,6 @@ export function Footer() {
 		{ icon: <Phone className="h-5 w-5" />, href: siteConfig.links.phone, label: 'Phone' },
 		{ icon: <Mail className="h-5 w-5" />, href: siteConfig.links.email, label: 'Email' },
 		{ icon: <Linkedin className="h-5 w-5" />, href: siteConfig.links.linkedin, label: 'LinkedIn' },
-		{ icon: <Github className="h-5 w-5" />, href: siteConfig.links.github, label: 'GitHub' }
 	];
 
 	const navColumns = [
@@ -36,7 +35,7 @@ export function Footer() {
 			title: 'Connect',
 			links: [
 				{ title: 'Contact', href: '/contact' },
-				{ title: 'Resume', href: '#', download: true },
+				{ title: 'Resume', href: '/files/resume.pdf', download: true },
 			],
 		},
 	];
@@ -91,14 +90,6 @@ export function Footer() {
 					<p className="text-muted-foreground">
 						© {currentYear} Engineering Portfolio. All rights reserved.
 					</p>
-					<div className="mt-4 sm:mt-0 flex gap-4">
-						<Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
-							Privacy Policy
-						</Link>
-						<Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
-							Terms of Service
-						</Link>
-					</div>
 				</div>
 			</div>
 		</footer>

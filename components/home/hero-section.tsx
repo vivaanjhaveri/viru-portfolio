@@ -72,7 +72,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						A showcase of my projects, skills, and achievements in the fields of mechanical and electrical engineering.
+						A showcase of my projects, skills, and achievements in the fields of Mechanical and Electrical Engineering.
 					</motion.p>
 
 					<motion.div
