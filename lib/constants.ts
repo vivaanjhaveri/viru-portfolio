@@ -88,7 +88,7 @@ export const experiences: Experience[] = [
 			'Led research into next generation product generation on India’s 1st 4W electric skateboard platform, conducted under NDA. ',
 			'Received recognition of CEO, VP of Design, and Technical Team Leads for quality and timeliness of research reports.',
 		],
-		technologies: ['Word', 'Excel', 'BOM'],
+		technologies: ['Word', 'Excel', 'BOM Management'],
 	},
 ];
 
