@@ -241,7 +241,7 @@ export const certificates: Certificate[] = [
 	{
 		title: 'Engineering In Training Certification',
 		issuer: 'Engineers and Geoscientists British Columbia',
-		date: 'August 2023',
+		date: 'August 2025',
 		id: '',
 		url: '#',
 		pdf: '#',
@@ -249,7 +249,7 @@ export const certificates: Certificate[] = [
 	{
 		title: 'IB Diploma',
 		issuer: 'International Baccalaureate Diploma Programme',
-		date: 'June 2023',
+		date: 'July 2020',
 		id: '',
 		url: '#',
 		pdf: '#',
