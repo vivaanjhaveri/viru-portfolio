@@ -104,9 +104,9 @@ export const projects: Project[] = [
 	{
 		title: 'Autonomous Solar Panel Cleaning Robot',
 		preview_description:
-			'A fully self-designed 12 kg, six-wheel rover built to restore and maintain peak solar panel performance.',
+			'A fully designed 12 kg, six-wheel rover built to restore and maintain peak solar panel performance.',
 		description:
-			'Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its custom PET-G chassis, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
+			'A fully designed 12 kg, six-wheel rover built to restore and maintain peak solar panel performance. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its custom PET-G chassis, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
 		images: [
 			{ src: '/images/projects/robot/solar.png', caption: '<b>Final CAD Model</b>' },
 			{ src: '/images/projects/robot/full_assembly.png', caption: '<b>Full Assembly of Robot</b>' },
@@ -119,7 +119,7 @@ export const projects: Project[] = [
 	{
 		title: 'Datacenter Human-Machine Interace',
 		description:
-			'Designed Manual Control, Automatic Real-Time Display, and EtherCAT Diagnostics pages to manage fan speeds, compressor states, and air handling parameters. Implemented user control modules with fault handling, enable logic, and custom alarm visual feedback, integrating branding elements for a professional operator interface. Delivered a production-ready system that enhanced technician usability and enabled direct supervisory control over environmental performance.',
+			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live datacenter (DC-1) as part of a Capilano University–Hynes Group research project. Designed Manual Control, Automatic Real-Time Display, and EtherCAT Diagnostics pages to manage fan speeds, compressor states, and air handling parameters. Implemented user control modules with fault handling, enable logic, and custom alarm visual feedback, integrating branding elements for a professional operator interface. Delivered a production-ready system that enhanced technician usability and enabled direct supervisory control over environmental performance.',
 		preview_description:
 			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live datacenter (DC-1) as part of a Capilano University–Hynes Group research project.',
 		images: [
@@ -132,7 +132,7 @@ export const projects: Project[] = [
 	},
 	{
 		title: 'Arduino Robot Muscle',
-		description: 'Developed a laser-cut tabletop “Master ARM” with potentiometer joints to stream scaled PWM signals to a full-scale “Slave ARM” made of wood/PLA and powered by four high-torque servos on a 7.5 V rail. Engineered a counter-weighted design capable of lifting >400 g at full extension, with each joint achieving ~250° sweep. Delivered a functional prototype meeting all performance specs; planned upgrades include a wearable master sleeve, +2 DOF, and encoder feedback for industrial tele-manipulation applications.',
+		description: 'Designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget. Developed a laser-cut tabletop “Master ARM” with potentiometer joints to stream scaled PWM signals to a full-scale “Slave ARM” made of wood/PLA and powered by four high-torque servos on a 7.5 V rail. Engineered a counter-weighted design capable of lifting >400 g at full extension, with each joint achieving ~250° sweep. Delivered a functional prototype meeting all performance specs; planned upgrades include a wearable master sleeve, +2 DOF, and encoder feedback for industrial tele-manipulation applications.',
 		preview_description:
 			'Designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget.',
 		images: [
@@ -155,11 +155,11 @@ export const projects: Project[] = [
 		tags: ['OpenStudio'],
 	},
 	{
-		title: 'Floor Plan & BIM Personal Project',
+		title: 'Floor Plan & Building Information Modelling',
 		description:
-			'This section includes personal Floor Plan Layouts I have drafted in AutoCAD and also results of Building Information Management (BIM) using Autodesk Revit. I believe this highlights my self-starter philosophy and illustrates my ability to adapt and assimilate quickly.',
+			'This section includes personal Floor Plan Layouts I have drafted in AutoCAD and also results of Building Information Management (BIM) using Autodesk Revit. I believe this highlights my self-starter philosophy and illustrates my ability to adapt and assimilate quickly with different technologies.',
 		preview_description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
+			'Illustrated my self-starter attitude by teaching myself 2D AutoCAD drafting and BIM from Revit.',
 		images: [
 			{ src: '/images/projects/dim/dim.png', caption: '<b>3D Building Model</b>' },
 			{ src: '/images/projects/dim/2d.png', caption: '<b>AutoCAD 2D Floor Plan Layout</b>\n\nDesigned and drafted a construction-ready floor plan using AutoCAD, showcasing precise room layouts, structural gridlines, and functional zoning.\n\nOrganized elements with a structured layer system and applied industry-standard hatches and lineweights for clear, professional documentation.\n\nEnsured seamless readability for construction teams through clean annotations and architectural conventions.' },
