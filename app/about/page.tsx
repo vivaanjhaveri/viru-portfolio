@@ -93,7 +93,7 @@ export default function AboutPage() {
 			animate="show"
 			className="mt-24"
 			>
-			<h2 className="text-3xl font-bold mb-8 text-center">Outside the Classroom</h2>
+			<h2 className="text-3xl font-bold mb-8 text-center">Outside The Classroom</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 				{/* Piano */}
 				<motion.div variants={fadeIn('up', 0.1)} className="space-y-4">
@@ -127,7 +127,7 @@ export default function AboutPage() {
 				<motion.div variants={fadeIn('up', 0.2)} className="space-y-4">
 				<div className="flex items-center gap-2">
 					<Guitar className="h-6 w-6 text-primary" />
-					<h3 className="text-xl font-semibold">Guitar Covers</h3>
+					<h3 className="text-xl font-semibold">Guitar Cover</h3>
 				</div>
 				<div className="aspect-video rounded-lg overflow-hidden">
 					<h4 className="text-xl font-semibold">The Last of Us</h4>
