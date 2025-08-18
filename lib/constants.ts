@@ -214,8 +214,8 @@ export const education: Education[] = [
 		field: 'Science and Mathematics',
 		institution: 'Canadian International School',
 		location: 'Bangalore, India',
-		startDate: 'September 2016',
-		endDate: 'Jun 2020',
+		startDate: 'August 2018',
+		endDate: 'June 2020',
 		achievements: [
 			'Student Council President',
 			'LEO Club President',
@@ -249,7 +249,7 @@ export const certificates: Certificate[] = [
 	{
 		title: 'IB Diploma',
 		issuer: 'International Baccalaureate Diploma Programme',
-		date: 'July 2020',
+		date: 'April 2020',
 		id: '',
 		url: '#',
 		pdf: '#',
