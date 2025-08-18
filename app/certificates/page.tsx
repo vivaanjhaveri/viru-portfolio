@@ -44,32 +44,9 @@ export default function CertificatesPage() {
 												<p className="text-sm text-muted-foreground mt-2">
 													Issued: {cert.date}
 												</p>
-												{cert.id && (
-													<p className="text-sm text-muted-foreground">
-														Certificate ID: {cert.id}
-													</p>
-												)}
 											</div>
 										</div>
 									</CardContent>
-									<CardFooter className="p-6 pt-0 gap-2">
-										{cert.url && (
-											<Button size="sm" variant="outline" asChild>
-												<a href={cert.url} target="_blank" rel="noreferrer">
-													<ExternalLink className="h-4 w-4 mr-2" />
-													Verify
-												</a>
-											</Button>
-										)}
-										{cert.pdf && (
-											<Button size="sm" variant="outline" asChild>
-												<a href={cert.pdf} download>
-													<FileDown className="h-4 w-4 mr-2" />
-													Download
-												</a>
-											</Button>
-										)}
-									</CardFooter>
 								</Card>
 							</motion.div>
 						))}

@@ -37,10 +37,9 @@ export const siteConfig = {
 		},
 	],
 	links: {
-		github: 'https://github.com/yourusername',
 		linkedin: 'https://www.linkedin.com/in/viru-gurudath/',
-		email: 'mailto:youremail@example.com',
-		phone: 'tel:+1234567890',
+		email: 'mailto:virugurudath@gmail.com',
+		phone: 'tel:+1(604)968-5595',
 	},
 };
 
@@ -89,64 +88,84 @@ export const experiences: Experience[] = [
 			'Led research into next generation product generation on India’s 1st 4W electric skateboard platform, conducted under NDA. ',
 			'Received recognition of CEO, VP of Design, and Technical Team Leads for quality and timeliness of research reports.',
 		],
-		technologies: ['Word', 'Excel', 'BOM'],
+		technologies: ['Word', 'Excel', 'BOM Management'],
 	},
 ];
 
 export type Project = {
 	title: string;
+	preview_description: string;
 	description: string;
-	image: string;
+	images: { src: string; caption: string }[] | string;
 	tags: string[];
-	link?: string;
-	repo?: string;
 };
 
 export const projects: Project[] = [
 	{
 		title: 'Autonomous Solar Panel Cleaning Robot',
+		preview_description:
+			'A fully self-designed 12 kg, six-wheel rover built to restore and maintain peak solar panel performance.',
 		description:
-			'Designed and implemented a smart home automation system using IoT technologies to control lighting, temperature, and security features.',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
-		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
-		link: '#',
-		repo: '#',
+			'Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its custom PET-G chassis, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
+		images: [
+			{ src: '/images/projects/robot/solar.png', caption: '<b>Final CAD Model</b>' },
+			{ src: '/images/projects/robot/full_assembly.png', caption: '<b>Full Assembly of Robot</b>' },
+			{ src: '/images/projects/robot/rope_rail.png', caption: '<b>Rope & Rail Guidance System</b>\n\nA motorised rope-and-rail safety gantry with a 110 mm drum and twin 24 V winch motors tether and retrieve the robot, enabling dependable climbs on pitches up to 50 °.\n\nIt also tracks the robot\'s position and follows it, keeping the rope at the most optimal positions to stop the robot from sliding.' },
+			{ src: '/images/projects/robot/circuit.png', caption: '<b>Circuit Wiring Diagram</b>\n\nDifferent voltage environments were needed for each system to ensure safe operation.\n\n24V: Drum and Rail Motors,\n\n12V: Locomotion Motors and Soap Pumps,\n\n5V: Teensy,\n\n3.3V: ESP' },
+			{ src: '/images/projects/robot/io.png', caption: '<b>IO Pin Diagram</b>' },
+		],
+		tags: ['SolidWorks', 'Arduino', 'Embedded Systems / C++', 'Fusion 360', 'Circuit Design', '3D Printing', 'Soldering'],
 	},
 	{
 		title: 'Datacenter Human-Machine Interace',
 		description:
-			'Developed software for structural analysis of beams and trusses using numerical methods and visualization techniques.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
-		link: '#',
-		repo: '#',
+			'Designed Manual Control, Automatic Real-Time Display, and EtherCAT Diagnostics pages to manage fan speeds, compressor states, and air handling parameters. Implemented user control modules with fault handling, enable logic, and custom alarm visual feedback, integrating branding elements for a professional operator interface. Delivered a production-ready system that enhanced technician usability and enabled direct supervisory control over environmental performance.',
+		preview_description:
+			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live datacenter (DC-1) as part of a Capilano University–Hynes Group research project.',
+		images: [
+			{ src: '/images/projects/datacentre/centre.png', caption: '<b>Datacentre</b>' },
+			{ src: '/images/projects/datacentre/main.png', caption: '<b>Home Page</b>' },
+			{ src: '/images/projects/datacentre/mc.png', caption: '<b>Main Control Page</b>\n\nThis page allows a user to toggle On/Off states of key HVAC machines within the datacenter.' },
+			{ src: '/images/projects/datacentre/artd.png', caption: '<b>Automatic Real Time Control System</b>\n\nIncludes all relevant boolean statuses.\n\nAdditionally Aisle Temperatures and Pressures are displayed.\n\nFan speeds are also visible.' },
+		],
+		tags: ['Beckhoff TwinCAT 3', 'C++', 'HTML5', 'JavaScript'],
 	},
 	{
 		title: 'Arduino Robot Muscle',
-		description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
-		link: '#',
-		repo: '#',
+		description: 'Developed a laser-cut tabletop “Master ARM” with potentiometer joints to stream scaled PWM signals to a full-scale “Slave ARM” made of wood/PLA and powered by four high-torque servos on a 7.5 V rail. Engineered a counter-weighted design capable of lifting >400 g at full extension, with each joint achieving ~250° sweep. Delivered a functional prototype meeting all performance specs; planned upgrades include a wearable master sleeve, +2 DOF, and encoder feedback for industrial tele-manipulation applications.',
+		preview_description:
+			'Designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget.',
+		images: [
+			{ src: '/images/projects/arm/arm.png', caption: '<b>ARM</b>' },
+			{ src: '/images/projects/arm/base.png', caption: '<b>Base Joint Exploded View</b>' },
+			{ src: '/images/projects/arm/mcd.png', caption: '<b>Main Wiring Diagram</b>\n\nIllustrates Master-Slave configuration.\n\nPotentiometers send signals to Arduino which then send PWM signals to high torque Servo motors.' },
+		],
+		tags: ['SolidWorks', 'Embedded Systems / C++', 'Soldering', 'MATLAB', '3D Printing', 'Circuit Design', 'Laser Cutting', 'Woodworking'],
 	},
 	{
-		title: 'OpenStudio Building Information Management',
-		description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
-		link: '#',
-		repo: '#',
+		title: 'Building Energy & Information Management',
+		description: 'Simulated air handling units, chilled water systems, CRAH/CRAC equipment, thermal zones, and server heat loads using BIM-aligned layouts. Analysed power consumption, pinpointed high-load equipment, and tested power scheduling strategies, projecting a 12% reduction in facility energy use. Delivered a validated model to support optimisation decisions, with scope for CFD and HMI integration.',
+		preview_description:
+			'Built a high-fidelity OpenStudio model of a Hynes Group datacenter HVAC system to identify and reduce energy losses.',
+		images: [
+			{ src: '/images/projects/bem/bem.png', caption: '<b>Results</b>' },
+			{ src: '/images/projects/bem/dclm.png', caption: '<b>Datecenter Layout Model</b>\n\nIncludes dimensioned aisles for sever racks.' },
+			{ src: '/images/projects/bem/hvac.png', caption: '<b>Datacenter HVAC Flow Loop</b>' },
+		],
+		tags: ['OpenStudio'],
 	},
 	{
-		title: 'Autodesk AutoCAD and Revit Personal Project',
+		title: 'Floor Plan & BIM Personal Project',
 		description:
+			'This section includes personal Floor Plan Layouts I have drafted in AutoCAD and also results of Building Information Management (BIM) using Autodesk Revit. I believe this highlights my self-starter philosophy and illustrates my ability to adapt and assimilate quickly.',
+		preview_description:
 			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
-		link: '#',
-		repo: '#',
+		images: [
+			{ src: '/images/projects/dim/dim.png', caption: '<b>3D Building Model</b>' },
+			{ src: '/images/projects/dim/2d.png', caption: '<b>AutoCAD 2D Floor Plan Layout</b>\n\nDesigned and drafted a construction-ready floor plan using AutoCAD, showcasing precise room layouts, structural gridlines, and functional zoning.\n\nOrganized elements with a structured layer system and applied industry-standard hatches and lineweights for clear, professional documentation.\n\nEnsured seamless readability for construction teams through clean annotations and architectural conventions.' },
+			{ src: '/images/projects/dim/floor2.png', caption: '<b>2nd Floor View</b>\n\nVisualized a complete two-storey residential structure with integrated balconies, curtain walls, and roofing, emphasizing exterior composition and architectural massing in Revit.' },
+		],
+		tags: ['AutoCAD', 'Revit'],
 	},
 ];
 
@@ -159,6 +178,7 @@ export type Education = {
 	endDate: string;
 	gpa?: string;
 	achievements: string[];
+	courses: string[];
 };
 
 export const education: Education[] = [
@@ -171,21 +191,39 @@ export const education: Education[] = [
 		endDate: 'April 2025',
 		gpa: '3.75/4.33',
 		achievements: [
+			'Degree with Distinction (2025)',
 			'Dean\'s List 2021/22, 2020/21',
-			'Oustanding International Student Award',
+			'Oustanding International Student Award (2020)',
+		],
+		courses: [
+			'MECH 260: Introduction to Mechanics of Materials <b>(A+)</b>',
+			'MECH 327: Thermodynamics II <b>(A-)</b>',
+			'MECH 360: Mechanics of Materials <b>(A-)</b>',
+			'MECH 375: Heat Transfer <b>(B)</b>',
+			'MECH 463: Mechanical Vibrations <b>(A-)</b>',
+			'MECH 478: Internal Combustion Engines <b>(A)</b>',
+			'ELEC 204: Linear Circuits <b>(A+)</b>',
+			'ELEC 341: Systems and Control <b>(B+)</b>',
+			'ELEC 344: Applied Electronics and Electromechanics<b>(A-)</b>',
+			'ELEC 352: Electric Energy Systems <b>(B)</b>',
+			'ELEC 315: Electronic Materials and Devices <b>(A)</b>',
 		],
 	},
 	{
 		degree: 'International Baccalaureate Diploma Programme',
 		field: 'Science and Mathematics',
-		institution: 'Canadian International School Bangalore',
-		location: 'City, Country',
-		startDate: 'Sep 2016',
+		institution: 'Canadian International School',
+		location: 'Bangalore, India',
+		startDate: 'September 2016',
 		endDate: 'Jun 2020',
 		achievements: [
 			'Student Council President',
 			'LEO Club President',
 			'Honour Roll (every single term since 6th grade)',
+		],
+		courses: [
+			'<b>HL</b>: Mathematics, Physics, Business',
+			'<b>SL</b>: English, Spanish ab Initio, Chemistry',
 		],
 	},
 ];
@@ -204,17 +242,17 @@ export const certificates: Certificate[] = [
 		title: 'Engineering In Training Certification',
 		issuer: 'Engineers and Geoscientists British Columbia',
 		date: 'August 2023',
-		id: 'CERT-12345',
+		id: '',
 		url: '#',
-		pdf: '/certificates/sample.pdf',
+		pdf: '#',
 	},
 	{
 		title: 'IB Diploma',
-		issuer: 'International Baccalaureate',
-		date: 'Jun 2023',
-		id: 'CERT-67890',
+		issuer: 'International Baccalaureate Diploma Programme',
+		date: 'June 2023',
+		id: '',
 		url: '#',
-		pdf: '/certificates/sample.pdf',
+		pdf: '#',
 	},
 ];
 
@@ -250,7 +288,6 @@ export const skills: Skill[] = [
 	// Languages
 	{ name: 'English', level: 10, category: 'language' },
 	{ name: 'Spanish', level: 6, category: 'language' },
-	{ name: 'French', level: 4, category: 'language' },
 ];
 
 export type BlogPost = {
@@ -261,30 +298,4 @@ export type BlogPost = {
 	image: string;
 	slug: string;
 };
-
-export const blogPosts: BlogPost[] = [
-	{
-		title: 'Advances in Renewable Energy Technologies',
-		excerpt: 'Exploring the latest innovations in renewable energy and their impact on sustainable development.',
-		date: 'Mar 15, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg',
-		slug: 'advances-in-renewable-energy',
-	},
-	{
-		title: 'The Future of Robotics in Manufacturing',
-		excerpt: 'How robotics and automation are revolutionizing the manufacturing industry and creating new opportunities.',
-		date: 'Feb 22, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
-		slug: 'future-of-robotics-manufacturing',
-	},
-	{
-		title: 'Sustainable Building Materials in Modern Construction',
-		excerpt: 'An analysis of eco-friendly building materials and their applications in contemporary architecture.',
-		date: 'Jan 10, 2024',
-		author: 'Your Name',
-		image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg',
-		slug: 'sustainable-building-materials',
-	},
-];
+;

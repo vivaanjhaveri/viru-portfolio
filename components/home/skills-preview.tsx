@@ -32,8 +32,10 @@ export function SkillsPreview() {
 			<div className="container px-4">
 				<SectionHeader
 					title="Technical Skills"
-					description="Key competencies and technical expertise that I've developed throughout my engineering journey."
 				/>
+				<p className="text-muted-foreground text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis">
+					Key competencies and technical expertise that I've developed throughout my engineering journey.
+				</p>
 
 				<motion.div
 					variants={staggerContainer()}

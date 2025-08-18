@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Award } from 'lucide-react';
+import { Calendar, MapPin, Award, BookOpenText } from 'lucide-react';
 
 import { Card, CardContent } from '@/components/ui/card';
 import { education } from '@/lib/constants';
@@ -46,7 +46,7 @@ export default function EducationPage() {
 											</div>
 											{edu.gpa && (
 												<p className="text-lg font-semibold mt-2 md:mt-0">
-													GPA: {edu.gpa}
+													<span className="font-bold">GPA:</span> {edu.gpa}
 												</p>
 											)}
 										</div>
@@ -69,6 +69,20 @@ export default function EducationPage() {
 													<li key={i} className="flex items-start">
 														<Award className="h-5 w-5 mr-2 text-primary shrink-0 mt-0.5" />
 														<span className="text-muted-foreground">{achievement}</span>
+													</li>
+												))}
+											</ul>
+										</div>
+
+										<div className="mt-6">
+											<h3 className="text-lg font-semibold mb-3">Courses</h3>
+											<ul className="space-y-2">
+												{edu.courses.map((course, i) => (
+													<li key={i} className="flex items-start">
+														<BookOpenText className="h-5 w-5 mr-2 text-primary shrink-0 mt-0.5" />
+														<span
+															dangerouslySetInnerHTML={{ __html: `<span class='text-muted-foreground'>${course}</span>` }}
+														/>
 													</li>
 												))}
 											</ul>

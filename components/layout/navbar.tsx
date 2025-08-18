@@ -41,8 +41,9 @@ export function Navbar() {
 			animate={{ y: 0 }}
 			transition={{ duration: 0.5 }}
 		>
-			<div className="container flex h-16 items-center justify-between py-4">
-				<div className="flex items-center gap-6 md:gap-10">
+			<div className="container relative flex h-16 items-center justify-between py-4">
+				{/* Left-aligned name */}
+				<div className="absolute left-0 top-1/2 -translate-y-1/2">
 					<Link href="/" className="flex items-center space-x-2">
 						<motion.div
 							whileHover={{ scale: 1.05 }}
@@ -51,22 +52,26 @@ export function Navbar() {
 							Viru Gurudath
 						</motion.div>
 					</Link>
-					<nav className="hidden md:flex gap-6">
-						{siteConfig.mainNav.map((item) => (
-							<Link
-								key={item.href}
-								href={item.href}
-								className={`nav-link text-sm font-medium transition-colors hover:text-primary ${pathname === item.href ? 'text-primary active' : 'text-muted-foreground'
-									}`}
-							>
-								{item.title}
-							</Link>
-						))}
-					</nav>
 				</div>
 
-				{/* Mobile menu */}
-				<div className="md:hidden">
+				{/* Center-aligned desktop nav */}
+				<nav className="hidden md:flex mx-auto gap-6">
+					{siteConfig.mainNav.map((item) => (
+						<Link
+							key={item.href}
+							href={item.href}
+							className={`nav-link text-sm font-medium transition-colors hover:text-primary ${pathname === item.href
+								? 'text-primary active'
+								: 'text-muted-foreground'
+								}`}
+						>
+							{item.title}
+						</Link>
+					))}
+				</nav>
+
+				{/* Right-aligned mobile menu */}
+				<div className="md:hidden ml-auto">
 					<Sheet>
 						<SheetTrigger asChild>
 							<Button variant="ghost" size="icon">
@@ -102,9 +107,6 @@ export function Navbar() {
 									</DropdownMenuTrigger>
 									<DropdownMenuContent align="end">
 										<DropdownMenuItem asChild>
-											<Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
-												GitHub
-											</Link>
 										</DropdownMenuItem>
 										<DropdownMenuItem asChild>
 											<Link href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">
@@ -116,13 +118,6 @@ export function Navbar() {
 							</div>
 						</SheetContent>
 					</Sheet>
-				</div>
-
-				{/* Desktop actions */}
-				<div className="hidden md:flex items-center gap-4">
-					<Link href="/contact">
-						<Button>Contact Me</Button>
-					</Link>
 				</div>
 			</div>
 		</motion.header>

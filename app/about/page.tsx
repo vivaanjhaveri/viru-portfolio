@@ -21,28 +21,18 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I am a passionate engineering student with a focus on innovation and problem-solving.
-							My academic journey has equipped me with strong technical skills and a deep understanding
-							of engineering principles.
-						</p>
+I’m an Integrated Engineering graduate passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. My skills span Embedded Systems, CAD, FEA, CFD, and BIM. I’ve worked on projects in robotics, smart monitoring, and renewable energy, focusing on design optimization, simulation workflows, prototyping, and real-time control systems. Outside of engineering, I’m a dedicated musician and photographer, which sharpens my creativity, precision, and attention to detail.						</p>
 						<div className="space-y-4">
 							<h2 className="text-2xl font-semibold">My Journey</h2>
 							<p className="text-muted-foreground">
-								Throughout my academic career, I've been involved in various projects that have
-								helped me develop practical skills and theoretical knowledge. I believe in
-								continuous learning and staying updated with the latest technological advancements.
+								Originally from India, I completed the IBDP at Canadian International School (Bangalore) before moving to UBC to study Integrated Engineering—a program that let me shape my own path at the intersection of mechanical design and electrical systems through project-based learning. I began my professional journey at Log9 Materials, where I worked on high-impact, confidential mechatronics projects, later joined Hynes Group as an HVAC Research Assistant, and was subsequently invited back to Log9—recognition I value as a strong endorsement of my early contributions.
 							</p>
 						</div>
-						<Button className="mt-6" asChild>
-							<a href="/cv.pdf" download>
-								Download CV <ArrowDownCircle className="ml-2 h-4 w-4" />
-							</a>
-						</Button>
 					</motion.div>
 
-					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[500px]">
+					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[550px]">
 						<Image
-							src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
+							src="/images/photo.png"
 							alt="Professional photo"
 							fill
 							className="object-cover rounded-lg"
@@ -86,7 +76,7 @@ export default function AboutPage() {
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Skills</h3>
 								<p className="text-muted-foreground">
-									Proficient in various engineering tools and technologies, such as CAD, FEA, CFD, and BIM, with a strong
+									Proficient in various engineering tools and technologies, such as Embedded Systems, CAD, FEA, CFD, and BIM, with a strong
 									foundation in problem-solving and analytical thinking.
 								</p>
 							</CardContent>
