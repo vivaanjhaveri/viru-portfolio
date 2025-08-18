@@ -52,7 +52,7 @@ I’m an Integrated Engineering graduate, with Distinction, passionate about com
 							<CardContent className="p-6">
 								<h3 className="text-xl font-semibold mb-4">Education</h3>
 								<p className="text-muted-foreground">
-									Currently Graduated, with Distinction, with a Bachelor's degree in Integrated Engineering with a focus on
+									Currently Graduated, with Distinction, with a Bachelor's degree in Integrated Engineering, specialising in
 									Mechanical and Electrical Engineering.
 								</p>
 							</CardContent>
