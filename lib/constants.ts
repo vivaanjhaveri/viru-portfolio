@@ -106,7 +106,7 @@ export const projects: Project[] = [
 		preview_description:
 			'A fully designed 12 kg, six-wheel rover built to restore and maintain peak solar panel performance.',
 		description:
-			'A fully designed 12 kg, six-wheel rover built to restore and maintain peak solar panel performance. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its custom PET-G chassis, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
+			'As a part of UBC Integrated Engineering\'s 4th Year Capstone, the team and I fully designed a 12 kg, six-wheel rover to restore and maintain peak solar panel performance. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its custom PET-G chassis, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
 		images: [
 			{ src: '/images/projects/robot/solar.png', caption: '<b>Final CAD Model</b>' },
 			{ src: '/images/projects/robot/full_assembly.png', caption: '<b>Full Assembly of Robot</b>' },
@@ -132,7 +132,7 @@ export const projects: Project[] = [
 	},
 	{
 		title: 'Arduino Robot Muscle',
-		description: 'Designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget. Developed a laser-cut tabletop “Master ARM” with potentiometer joints to stream scaled PWM signals to a full-scale “Slave ARM” made of wood/PLA and powered by four high-torque servos on a 7.5 V rail. Engineered a counter-weighted design capable of lifting >400 g at full extension, with each joint achieving ~250° sweep. Delivered a functional prototype meeting all performance specs; planned upgrades include a wearable master sleeve, +2 DOF, and encoder feedback for industrial tele-manipulation applications.',
+		description: 'As a part of UBC Integrated Engineering\'s 2nd Year Capstone, the team and I designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget. Developed a laser-cut tabletop “Master ARM” with potentiometer joints to stream scaled PWM signals to a full-scale “Slave ARM” made of wood/PLA and powered by four high-torque servos on a 7.5 V rail. Engineered a counter-weighted design capable of lifting >400 g at full extension, with each joint achieving ~250° sweep. Delivered a functional prototype meeting all performance specs; planned upgrades include a wearable master sleeve, +2 DOF, and encoder feedback for industrial tele-manipulation applications.',
 		preview_description:
 			'Designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget.',
 		images: [
