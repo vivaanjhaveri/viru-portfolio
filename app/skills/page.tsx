@@ -24,32 +24,18 @@ export default function SkillsPage() {
 		icon: React.ReactNode;
 		delay: number;
 	}) => (
-		<motion.div variants={fadeIn('up', delay)}>
-			<Card className="card-gradient">
-				<CardContent className="p-6">
+		<motion.div variants={fadeIn('up', delay)} className="h-full">
+			<Card className="card-gradient h-full flex flex-col">
+				<CardContent className="p-6 flex-1 flex flex-col">
 					<div className="flex items-center gap-2 mb-6">
 						{icon}
 						<h2 className="text-2xl font-semibold">{title}</h2>
 					</div>
-					<div className="space-y-4">
+					<ul className="list-disc list-inside text-muted-foreground space-y-2 flex-1">
 						{skills.map((skill, index) => (
-							<div key={index}>
-								<div className="flex justify-between mb-1">
-									<span>{skill.name}</span>
-									<span className="text-muted-foreground">{skill.level}/10</span>
-								</div>
-								<div className="skill-bar">
-									<motion.div
-										className="skill-progress"
-										initial={{ width: 0 }}
-										whileInView={{ width: `${skill.level * 10}%` }}
-										viewport={{ once: true }}
-										transition={{ duration: 1, delay: index * 0.1 }}
-									/>
-								</div>
-							</div>
+							<li key={index}>{skill.name}</li>
 						))}
-					</div>
+					</ul>
 				</CardContent>
 			</Card>
 		</motion.div>
@@ -71,7 +57,8 @@ export default function SkillsPage() {
 						</p>
 					</motion.div>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+					{/* grid with equal height cards */}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
 						<SkillCategory
 							title="Technical Skills"
 							skills={technicalSkills}
