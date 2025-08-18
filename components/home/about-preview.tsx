@@ -42,7 +42,7 @@ export function AboutPreview() {
 						viewport={{ once: true }}
 						className="flex flex-col justify-center"
 					>
-						<h3 className="text-2xl font-bold mb-4">Engineer in Training</h3>
+						<h3 className="text-2xl font-bold mb-4">Integrated Engineer in Training</h3>
 						<p className="text-muted-foreground mb-6">
 							I'm a dedicated engineering student with a passion for innovation and problem-solving.
 							My academic journey has equipped me with strong technical skills and a deep understanding
