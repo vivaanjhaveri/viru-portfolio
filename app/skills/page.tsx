@@ -66,7 +66,7 @@ export default function SkillsPage() {
 							delay={0.3}
 						/>
 						<SkillCategory
-							title="Software Proficiency"
+							title="Softwares & Coding Languages"
 							skills={softwareSkills}
 							icon={<Code2 className="h-6 w-6 text-secondary" />}
 							delay={0.4}

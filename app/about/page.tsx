@@ -23,17 +23,16 @@ export default function AboutPage() {
 						<p className="text-lg text-muted-foreground">
 							I’m an Integrated Engineering graduate, with Distinction, passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. Growing up, I took inspiration from my Father, a former Mechanical Engineer, and found myself constantly tinkering and disassembling devices to figure out how they work. My passion for Physics only further drove me towards the Sciences and Engineering.
 						</p>
-						<p className="text-lg text-muted-foreground">
-							My skills span Embedded Systems, CAD, FEA, CFD, and BIM. 
+						<p className="text-lg text-muted-foreground"> 
 							I’ve worked on projects in robotics, smart monitoring, and renewable energy, focusing on design optimization, simulation workflows, prototyping, and real-time control systems. 
-							Outside of my technical Engineering work, I’m a dedicated musician and photographer, which highlights my adaptability, sharpens my creativity, precision, and attention to detail.
+							Outside of my technical Engineering work, I’m a dedicated martial artist, musician, and photographer, which highlights my adaptability, sharpens my creativity, precision, and attention to detail.
 						</p>
 						<div className="space-y-4">
 					<h2 className="text-2xl font-semibold">My Journey</h2>
 					<p className="text-muted-foreground">
-						Originally from India, I completed the IBDP at Canadian International School (Bangalore) before moving to UBC to study Integrated Engineering, a program that allowed me to shape my own path within the intersection of key Mechanical and Electrical engineering concepts through project-based, independent learning. I began my professional journey at Log9 Materials, where I worked on high-impact, 
-						<span className="font-bold text-red-500"> confidential </span>
-						(Computational Fluid Dynamics and Finite Element Analysis) projects, later joined Hynes Group as an HVAC Research Assistant, and was subsequently invited back to Log9. I believe my call-backs symbolise and endorse the value of my early contributions, my work ethic, and my resourcefulness.
+						Originally from India, I completed the IBDP at Canadian International School Bangalore before moving to UBC to study Integrated Engineering, a program that allowed me to shape my own path within the intersection of key Mechanical and Electrical engineering concepts through project-based, independent learning. I began my professional journey at Log9 Materials, where I worked on high-impact, 
+						  <span className="font-bold text-gradient"> confidential </span>
+						(Computational Fluid Dynamics and Finite Element Analysis) projects, later joined Hynes Group as an HVAC Research Assistant (Building Information Management, Computational Fluid Dynamics), and was subsequently invited back to Log9. I believe my call-backs symbolise and endorse the value of my early contributions, my work ethic, and my resourcefulness.
 					</p>
 					</div>
 					</motion.div>

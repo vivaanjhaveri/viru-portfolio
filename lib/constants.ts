@@ -104,9 +104,9 @@ export const projects: Project[] = [
 	{
 		title: 'Autonomous Solar Panel Cleaning Robot',
 		preview_description:
-			'A fully designed 12 kg, six-wheel rover built to restore and maintain peak solar panel performance.',
+			'A fully student designed and manufactured six-wheel rover built to restore and maintain peak solar panel performance funded by UBC\'s Alma Mater Society Sustainability Fund.',
 		description:
-			'As a part of UBC Integrated Engineering\'s 4th Year Capstone, the team and I fully designed a 12 kg, six-wheel rover to restore and maintain peak solar panel performance. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its custom PET-G chassis, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
+			'As a part of UBC Integrated Engineering\'s 4th Year Capstone, the team and I fully designed a 12 kg, six-wheel rover to restore and maintain peak solar panel performance. This project recieved a generous grant from the Alma Mater Society (AMS) Sustainaibility Fund. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its innovative Rope & Rail Guidance System, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
 		images: [
 			{ src: '/images/projects/robot/solar.png', caption: '<b>Final CAD Model</b>' },
 			{ src: '/images/projects/robot/full_assembly.png', caption: '<b>Full Assembly of Robot</b>' },
@@ -152,7 +152,7 @@ export const projects: Project[] = [
 			{ src: '/images/projects/bem/dclm.png', caption: '<b>Datecenter Layout Model</b>\n\nIncludes dimensioned aisles for sever racks.' },
 			{ src: '/images/projects/bem/hvac.png', caption: '<b>Datacenter HVAC Flow Loop</b>' },
 		],
-		tags: ['OpenStudio'],
+		tags: ['OpenStudio', 'Building Information Modelling', 'Building Energy Modelling'],
 	},
 	{
 		title: 'Floor Plan & Building Information Modelling',
@@ -274,9 +274,13 @@ export const skills: Skill[] = [
 	{ name: 'MATLAB', level: 8, category: 'software' },
 	{ name: 'AutoCAD', level: 7, category: 'software' },
 	{ name: 'SolidWorks', level: 8, category: 'software' },
-	{ name: 'BIM', level: 7, category: 'software' },
+	{ name: 'Revit', level: 6, category: 'software' },
 	{ name: 'C/C++', level: 6, category: 'software' },
 	{ name: 'Ansys Mechanical', level: 7, category: 'software' },
+	{ name: 'Ansys Fluent', level: 7, category: 'software' },
+	{ name: 'TypeScript / JavaScript', level: 7, category: 'software' },
+	{ name: 'CSS', level: 7, category: 'software' },
+	
 
 	// Soft Skills
 	{ name: 'Problem Solving', level: 9, category: 'soft' },

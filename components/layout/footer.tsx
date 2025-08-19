@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Linkedin, Github, Twitter, Facebook, Instagram, Phone, Mail, MessageSquare } from 'lucide-react';
+import { Linkedin, Github, Twitter, Facebook, Instagram, Phone, Mail } from 'lucide-react';
 
 import { siteConfig } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
@@ -35,7 +35,7 @@ export function Footer() {
 			title: 'Connect',
 			links: [
 				{ title: 'Contact', href: '/contact' },
-				{ title: 'Resume', href: '/files/resume.pdf', download: true },
+				{ title: 'Portfolio', href: '/files/Viru Gurudath Portfolio.pdf', download: true },
 			],
 		},
 	];
@@ -44,6 +44,7 @@ export function Footer() {
 		<footer className="bg-card py-12 border-t">
 			<div className="container px-4 mx-auto">
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+					{/* Logo + About */}
 					<div className="md:col-span-1">
 						<Link href="/" className="inline-block">
 							<span className="text-2xl font-bold text-gradient">Viru Gurudath</span>
@@ -62,6 +63,7 @@ export function Footer() {
 						</div>
 					</div>
 
+					{/* Navigation Columns */}
 					<div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8">
 						{navColumns.map((column, index) => (
 							<div key={index}>
@@ -76,6 +78,23 @@ export function Footer() {
 											>
 												{link.title}
 											</Link>
+
+											{/* Portfolio note */}
+											{link.title === 'Portfolio' && (
+												<p className="text-xs italic mt-1 text-gradient">
+													Password protected .pdf, see{' '}
+													<Link
+														href="/projects"
+														className="relative font-bold text-muted-foreground transition-colors
+															after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
+															after:bg-primary after:transition-all after:duration-300 
+															hover:text-primary hover:after:w-full"
+													>
+														Projects
+													</Link>{' '}
+													Page for details.
+												</p>
+											)}
 										</li>
 									))}
 								</ul>
@@ -86,6 +105,7 @@ export function Footer() {
 
 				<Separator className="my-8" />
 
+				{/* Footer bottom */}
 				<div className="flex flex-col sm:flex-row items-center justify-between text-sm">
 					<p className="text-muted-foreground">
 						© {currentYear} Engineering Portfolio. All rights reserved.

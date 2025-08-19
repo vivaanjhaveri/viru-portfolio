@@ -22,33 +22,46 @@ export default function ProjectsPage() {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A showcase of my engineering projects, demonstrating practical application
               of skills and innovative problem-solving.
+              <br />
+              <br />
+              <motion.span
+                variants={fadeInScale(0.3)}
+                className="text-sm italic text-muted-foreground block"
+              >
+                FEA and CFD samples are{' '}
+                <span className="text-gradient font-bold">not available</span> due to the{' '}
+                <span className="text-gradient font-bold"> non-disclosable </span>
+                nature of my work at Hynes Group & Log9 Materials.
+              </motion.span>
             </p>
             <br />
+
             <Button size="lg" variant="outline" asChild>
               <Link href="/files/Viru Gurudath Portfolio.pdf" download>
                 Download Portfolio <FileDown className="ml-2 h-4 w-4" />
               </Link>
             </Button>
 
-          {/* Password protection note */}
-<p className="text-center mt-6">
-  <span className="text-gradient">
-    This PDF is password protected. Please use the form on my{" "}
-  </span>
-  <Link
-    href="/contact"
-    className="relative font-medium transition-colors text-muted-foreground
-               after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
-               after:bg-primary after:transition-all after:duration-300 
-               hover:text-primary hover:after:w-full"
-  >
-    Contact
-  </Link>{" "}
-  <span className="text-gradient">page to request the password.</span>
-</p>
+            {/* Password protection note */}
+            <p className="text-center text-sm md:text-base mt-4">
+              <span className="text-gradient">
+                The file above is encrypted. Please use the form on my{' '}
+              </span>
 
+              <Link
+                href="/contact"
+                className="relative font-bold text-muted-foreground 
+                  after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
+                  after:bg-primary after:transition-all after:duration-300 
+                  hover:text-primary hover:after:w-full"
+              >
+                Contact
+              </Link>
 
+              <span className="text-gradient"> page to request the password.</span>
+            </p>
           </motion.div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
               <ProjectCard key={index} project={project} delay={index * 0.1} />
@@ -202,3 +215,4 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
     </motion.div>
   );
 }
+

@@ -58,7 +58,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.2)}
 						className="text-3xl md:text-4xl font-bold mb-4 text-primary"
 					>
-						Mechanical and Electrical Engineering
+						Mechanical & Electrical Engineering
 					</motion.h2>
 
 					<motion.h1
@@ -72,7 +72,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						A showcase of my projects, skills, and achievements in the fields of Mechanical and Electrical Engineering.
+						A showcase of my projects, skills, and achievements in the fields of Mechanical & Electrical Engineering.
 					</motion.p>
 
 					<motion.div

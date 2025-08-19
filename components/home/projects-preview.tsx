@@ -21,7 +21,7 @@ export function ProjectsPreview() {
 			<div className="container px-4">
 				<SectionHeader
 					title="Featured Projects"
-					description="Explore some of my recent engineering projects and technical work."
+					description="Explore some of my recent engineering projects and technical work in Academia and Industry."
 				/>
 
 				<motion.div
