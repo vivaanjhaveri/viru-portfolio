@@ -30,7 +30,10 @@ export default function AboutPage() {
 						<div className="space-y-4">
 					<h2 className="text-2xl font-semibold">My Journey</h2>
 					<p className="text-muted-foreground">
-						Originally from India, I completed the IBDP at Canadian International School Bangalore before moving to UBC to study Integrated Engineering, a program that allowed me to shape my own path within the intersection of key Mechanical and Electrical engineering concepts through project-based, independent learning. I began my professional journey at Log9 Materials, where I worked on high-impact, 
+						Originally from India, I completed the IBDP at Canadian International School Bangalore before moving to UBC to study Integrated Engineering, a program that allowed me to shape my own path within the intersection of key Mechanical and Electrical engineering concepts through project-based, independent learning. 
+						</p>
+						<p className="text-muted-foreground">
+						I began my professional journey at Log9 Materials, where I worked on high-impact, 
 						  <span className="font-bold text-gradient"> confidential </span>
 						(Computational Fluid Dynamics and Finite Element Analysis) projects, later joined Hynes Group as an HVAC Research Assistant (Building Information Management, Computational Fluid Dynamics), and was subsequently invited back to Log9. I believe my call-backs symbolise and endorse the value of my early contributions, my work ethic, and my resourcefulness.
 					</p>

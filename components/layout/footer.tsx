@@ -82,7 +82,7 @@ export function Footer() {
 											{/* Portfolio note */}
 											{link.title === 'Portfolio' && (
 												<p className="text-xs italic mt-1 text-gradient">
-													Password protected .pdf, see{' '}
+													Restricted Portfolio –– see {' '}
 													<Link
 														href="/projects"
 														className="relative font-bold text-muted-foreground transition-colors
@@ -92,7 +92,7 @@ export function Footer() {
 													>
 														Projects
 													</Link>{' '}
-													Page for details.
+													Page for access details
 												</p>
 											)}
 										</li>
