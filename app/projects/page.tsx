@@ -23,12 +23,37 @@ export default function ProjectsPage() {
               A showcase of my engineering projects, demonstrating practical application
               of skills and innovative problem-solving.
             </p>
-            <br></br>
+            <br />
             <Button size="lg" variant="outline" asChild>
-							<Link href="/files/portfolio.pdf" download>
-								Download Portfolio <FileDown className="ml-2 h-4 w-4" />
-							</Link>
-						</Button>
+              <Link href="/files/Viru Gurudath Portfolio.pdf" download>
+                Download Portfolio <FileDown className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+
+          {/* Password protection note */}
+<p className="text-center mt-6">
+  <span className="text-gradient">
+    This PDF is password protected. Please use the form on my{" "}
+  </span>
+  <Link
+    href="/contact"
+    className="relative font-bold text-white transition-colors
+               after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
+               after:bg-primary after:transition-all after:duration-300 
+               hover:text-primary hover:after:w-full"
+  >
+    Contact
+  </Link>
+  <span className="text-gradient"> page to request the password.</span>
+</p>
+
+
+
+
+
+
+
+
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -163,7 +188,13 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
 
             <div className="w-[300px] p-6 text-sm bg-muted text-foreground overflow-y-auto rounded-r-lg whitespace-pre-line">
               <h4 className="font-semibold text-base mb-2">Image Caption</h4>
-              <p dangerouslySetInnerHTML={{ __html: project.images[currentImage].caption?.replace(/\n/g, '<br/>') || 'No caption provided.' }} />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html:
+                    project.images[currentImage].caption?.replace(/\n/g, '<br/>') ||
+                    'No caption provided.',
+                }}
+              />
             </div>
 
             <button
@@ -175,10 +206,6 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
           </div>
         </div>
       )}
-
-      
     </motion.div>
-
-    
   );
 }
