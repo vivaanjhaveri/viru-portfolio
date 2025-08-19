@@ -46,16 +46,7 @@ export default function ProjectsPage() {
   </Link>
   <span className="text-gradient"> page to request the password.</span>
 </p>
-
-
-n
-
-
-
-
-
           </motion.div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
               <ProjectCard key={index} project={project} delay={index * 0.1} />
