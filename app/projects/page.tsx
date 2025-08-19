@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Github, ExternalLink, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Github, ExternalLink, X, FileDown } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -23,6 +23,12 @@ export default function ProjectsPage() {
               A showcase of my engineering projects, demonstrating practical application
               of skills and innovative problem-solving.
             </p>
+            <br></br>
+            <Button size="lg" variant="outline" asChild>
+							<Link href="/files/portfolio.pdf" download>
+								Download Portfolio <FileDown className="ml-2 h-4 w-4" />
+							</Link>
+						</Button>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -169,6 +175,10 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
           </div>
         </div>
       )}
+
+      
     </motion.div>
+
+    
   );
 }
