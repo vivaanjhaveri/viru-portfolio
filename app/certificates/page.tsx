@@ -28,29 +28,31 @@ export default function CertificatesPage() {
 						</p>
 					</motion.div>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{certificates.map((cert, index) => (
-							<motion.div
-								key={index}
-								variants={fadeIn('up', 0.2 * index)}
-							>
-								<Card className="card-gradient">
-									<CardContent className="p-6">
-										<div className="flex items-start gap-4">
-											<Award className="h-8 w-8 text-primary shrink-0" />
-											<div>
-												<h2 className="text-xl font-semibold mb-2">{cert.title}</h2>
-												<p className="text-muted-foreground">{cert.issuer}</p>
-												<p className="text-sm text-muted-foreground mt-2">
-													Issued: {cert.date}
-												</p>
-											</div>
-										</div>
-									</CardContent>
-								</Card>
-							</motion.div>
-						))}
-					</div>
+					<div className="flex justify-center gap-6 flex-wrap">
+  {certificates.map((cert, index) => (
+    <motion.div
+      key={index}
+      variants={fadeIn('up', 0.2 * index)}
+      className="flex justify-center"
+    >
+      <Card className="card-gradient w-full max-w-sm">
+        <CardContent className="p-6">
+          <div className="flex items-start gap-4">
+            <Award className="h-8 w-8 text-primary shrink-0" />
+            <div>
+              <h2 className="text-xl font-semibold mb-2">{cert.title}</h2>
+              <p className="text-muted-foreground">{cert.issuer}</p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Issued: {cert.date}
+              </p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </motion.div>
+  ))}
+</div>
+
 				</motion.div>
 			</div>
 		</div>

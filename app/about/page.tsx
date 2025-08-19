@@ -29,11 +29,13 @@ export default function AboutPage() {
 							Outside of my technical Engineering work, I’m a dedicated musician and photographer, which highlights my adaptability, sharpens my creativity, precision, and attention to detail.
 						</p>
 						<div className="space-y-4">
-							<h2 className="text-2xl font-semibold">My Journey</h2>
-							<p className="text-muted-foreground">
-								Originally from India, I completed the IBDP at Canadian International School (Bangalore) before moving to UBC to study Integrated Engineering, a program that allowed me to shape my own path within the intersection of key Mechanical and Electrical engineering concepts through project-based, independent learning. I began my professional journey at Log9 Materials, where I worked on high-impact, confidential Mechatronics projects, later joined Hynes Group as an HVAC Research Assistant, and was subsequently invited back to Log9. I believe my call-backs symbolise and endorse the value of my early contributions, my work ethic, and my resourcefulness.
-							</p>
-						</div>
+					<h2 className="text-2xl font-semibold">My Journey</h2>
+					<p className="text-muted-foreground">
+						Originally from India, I completed the IBDP at Canadian International School (Bangalore) before moving to UBC to study Integrated Engineering, a program that allowed me to shape my own path within the intersection of key Mechanical and Electrical engineering concepts through project-based, independent learning. I began my professional journey at Log9 Materials, where I worked on high-impact, 
+						<span className="font-bold text-red-500"> confidential </span>
+						(Computational Fluid Dynamics and Finite Element Analysis) projects, later joined Hynes Group as an HVAC Research Assistant, and was subsequently invited back to Log9. I believe my call-backs symbolise and endorse the value of my early contributions, my work ethic, and my resourcefulness.
+					</p>
+					</div>
 					</motion.div>
 
 					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[700px]">
@@ -59,7 +61,7 @@ export default function AboutPage() {
 							<CardContent className="p-6 space-y-4">
 								<h3 className="text-xl font-semibold">Education</h3>
 								<p className="text-muted-foreground">
-									Graduated with Distinction in Integrated Engineering (Mechanical + Electrical).
+									Graduated with Distinction in Integrated Engineering, specialising in Mechanical and Electrical Engineering from The University of British Columbia.
 								</p>
 							</CardContent>
 						</Card>
@@ -70,7 +72,7 @@ export default function AboutPage() {
 							<CardContent className="p-6 space-y-4">
 								<h3 className="text-xl font-semibold">Experience</h3>
 								<p className="text-muted-foreground">
-									Valuable internships and projects with cutting-edge technologies and methodologies.
+									Valuable internships and projects with cutting-edge technologies and methodologies. Worked in Industry and in Research domains, demonstrating adaptability in different technical environments.
 								</p>
 							</CardContent>
 						</Card>
@@ -81,7 +83,7 @@ export default function AboutPage() {
 							<CardContent className="p-6 space-y-4">
 								<h3 className="text-xl font-semibold">Skills</h3>
 								<p className="text-muted-foreground">
-									Embedded Systems, CAD, FEA, CFD, BIM — with strong problem-solving and analytical thinking.
+									Embedded Systems, Computer-Aided Design (CAD), Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), Building Information Management (BIM). Breadth of competency demonstrates strong problem-solving abilities and independent analytical thinking skills required for self-learning.
 								</p>
 							</CardContent>
 						</Card>
