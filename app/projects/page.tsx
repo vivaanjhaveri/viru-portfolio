@@ -37,15 +37,17 @@ export default function ProjectsPage() {
   </span>
   <Link
     href="/contact"
-    className="relative font-bold text-white transition-colors
+    className="relative font-medium transition-colors text-muted-foreground
                after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 
                after:bg-primary after:transition-all after:duration-300 
                hover:text-primary hover:after:w-full"
   >
     Contact
-  </Link>
-  <span className="text-gradient"> page to request the password.</span>
+  </Link>{" "}
+  <span className="text-gradient">page to request the password.</span>
 </p>
+
+
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
@@ -86,7 +88,7 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
     <motion.div variants={fadeInScale(delay)} className="flex">
       <Card className="flex flex-col h-full w-full max-w-3xl mx-auto card-gradient overflow-hidden">
         {hasImages && (
-          <div className="relative h-[480px] w-full">
+          <div className="relative h-[620px] w-full">
             <motion.div
               key={current?.src}
               initial={{ opacity: 0 }}
