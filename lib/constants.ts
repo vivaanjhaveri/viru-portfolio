@@ -239,7 +239,7 @@ export type Certificate = {
 
 export const certificates: Certificate[] = [
 	{
-		title: 'Engineering-in-Training Designation',
+		title: 'Engineer-in-Training Designation',
 		issuer: 'Engineers and Geoscientists British Columbia',
 		date: 'August 2025',
 		id: '',
