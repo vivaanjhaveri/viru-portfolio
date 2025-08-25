@@ -50,7 +50,7 @@ export default function SkillsPage() {
 					animate="show"
 				>
 					<motion.div variants={fadeIn('down', 0.2)} className="text-center mb-12">
-						<h1 className="text-4xl font-bold mb-4">Skills & Expertise</h1>
+						<h1 className="text-4xl font-bold mb-4">Skills & Competencies</h1>
 						<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
 							A comprehensive overview of my technical abilities, software proficiency,
 							soft skills, and language capabilities.
@@ -60,7 +60,7 @@ export default function SkillsPage() {
 					{/* grid with equal height cards */}
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
 						<SkillCategory
-							title="Technical Skills"
+							title="Engineering Fundamentals"
 							skills={technicalSkills}
 							icon={<Cpu className="h-6 w-6 text-primary" />}
 							delay={0.3}

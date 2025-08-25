@@ -32,7 +32,7 @@ export function SkillsPreview() {
 			<div className="container px-4">
 				<SectionHeader title="Technical Skills" />
 				<p className="text-muted-foreground text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis">
-					Key competencies and technical expertise that I've developed throughout my engineering journey.
+					Key competencies and technical skills that I've developed throughout my engineering journey.
 				</p>
 
 				<motion.div
@@ -45,7 +45,7 @@ export function SkillsPreview() {
 					<motion.div variants={fadeIn('up', 0.1)} className="space-y-6">
 						<Card>
 							<CardContent className="p-6">
-								<h3 className="text-xl font-bold mb-4">Technical Expertise</h3>
+								<h3 className="text-xl font-bold mb-4">Engineering Fundamentals</h3>
 								<ul className="list-disc list-inside text-muted-foreground space-y-2">
 									{topTechnicalSkills.map((skill, index) => (
 										<li key={index}>{skill.name}</li>
