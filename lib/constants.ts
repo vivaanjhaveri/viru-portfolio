@@ -275,7 +275,7 @@ export const skills: Skill[] = [
 	{ name: 'AutoCAD', level: 7, category: 'software' },
 	{ name: 'SolidWorks', level: 8, category: 'software' },
 	{ name: 'Revit', level: 6, category: 'software' },
-	{ name: 'C/C++', level: 6, category: 'software' },
+	{ name: 'C / C++', level: 6, category: 'software' },
 	{ name: 'Ansys Mechanical', level: 7, category: 'software' },
 	{ name: 'Ansys Fluent', level: 7, category: 'software' },
 	{ name: 'TypeScript / JavaScript', level: 7, category: 'software' },
