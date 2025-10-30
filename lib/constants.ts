@@ -55,10 +55,10 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
-		title: 'Mechatronics Intern',
+		title: 'Mechatronics Intern/Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
-		startDate: 'June 2024',
+		startDate: 'May 2024',
 		endDate: 'August 2024',
 		description: [
 			'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times). ',
@@ -79,10 +79,10 @@ export const experiences: Experience[] = [
 		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Ansys Fluent', 'Bash', 'OpenStudio', 'TwinCAT 3'],
 	},
 		{
-		title: 'Research and Development Project Intern',
+		title: 'Research and Development Intern/Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
-		startDate: 'June 2022',
+		startDate: 'May 2022',
 		endDate: 'August 2022',
 		description: [
 			'Led research into next generation product generation on India’s 1st 4W electric skateboard platform, conducted under NDA. ',
