@@ -102,17 +102,32 @@ export type Project = {
 
 export const projects: Project[] = [
 		{
-		title: 'Battery Enclosure Finite Element Analysis',
+		title: 'Battery Enclosure Structural Analysis',
 		preview_description:
-			'Mitigated deflections with FEA software, validating enclosure strength and greenlighting mass manufacturing.',
+			'Mitigated deflections with Finite Element Analysis simulations, validating enclosure strength and greenlighting mass manufacturing.',
 		description:
-			'During my 2nd Log9 Materials internship/co-op, I conducted Finite Element Analysis (FEA) on a battery enclosure to ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I recommended design modifications that mitigated excessive deflections, thereby validating the enclosure\'s strength. This work was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
+			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, on SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This <b>mesh-convergent simulation</b> was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
 		images: [
 			{ src: '/images/projects/fea/enclosure.png', caption: '<b>SolidWorks Sheet-metal Enclosure</b>' },
 			{ src: '/images/projects/fea/deflection.png', caption: '<b>Deflections Visualised</b>' },
 			{ src: '/images/projects/fea/stresses.png', caption: '<b>Exaggerated Visual Stress Distribution</b>' },
 			{ src: '/images/projects/fea/moredeflection.png', caption: '<b>Additional Angles</b>' },
 			
+		],
+		tags: ['SolidWorks', 'Ansys Mechanical', 'Static Structural Analysis', 'Finite Element Analysis', 'Computer-Aided Engineering'],
+	},
+			{
+		title: 'Datacenter Airflow Thermal Analysis',
+		preview_description:
+			'Used Computational Fluid Dynamics simulation to plan airflow and cooling efficiency optimisation strategies for a Datacenter.',
+		description:
+			'During my HVAC Research Assistant Co-op at Hynes Group, I performed Computational Fluid Dynamics (CFD) analysis on a Datacenter environment to optimize airflow and cooling efficiency. Utilizing Ansys Fluent, I created detailed models of the Datacenter layout, including server racks and cooling units. Through simulations, I identified areas of poor airflow and high thermal loads. Based on these insights, I proposed design changes to improve ventilation and reduce hotspots, ultimately enhancing the overall cooling performance of the Datacenter.',
+		images: [
+			{ src: '/images/projects/cfd/velocity.png', caption: '<b>Airflow Velocity Distribution in Datacenter</b>' },
+			{ src: '/images/projects/cfd/pathlines.png', caption: '<b>Airflow Thermal Pathlines in Datacenter</b>\n\nBlue pathlines represent cold air supplied by CRAC units.\nGreen pathlines indicate mixed air regions where cool and warm streams interact.\nYellow pathlines show moderately heated air moving toward exhaust zones.\nRed pathlines represent hot exhaust air exiting from the server racks.' },
+			{ src: '/images/projects/cfd/datacenter.png', caption: '<b>Model of Datacenter</b>\n\nDesigned on SolidWorks' },
+			{ src: '/images/projects/cfd/cabinet.png', caption: '<b>Close-up of Server Cabinet</b>\n\nDesigned on SolidWorks.' },
+
 		],
 		tags: ['SolidWorks', 'Ansys Mechanical', 'Static Structural Analysis', 'Finite Element Analysis', 'Computer-Aided Engineering'],
 	},
@@ -129,18 +144,18 @@ export const projects: Project[] = [
 			{ src: '/images/projects/robot/circuit.png', caption: '<b>Circuit Wiring Diagram</b>\n\nDifferent voltage environments were needed for each system to ensure safe operation.\n\n24V: Drum and Rail Motors,\n\n12V: Locomotion Motors and Soap Pumps,\n\n5V: Teensy,\n\n3.3V: ESP' },
 			{ src: '/images/projects/robot/io.png', caption: '<b>IO Pin Diagram</b>' },
 		],
-		tags: ['SolidWorks', 'Arduino', 'Embedded Systems / C++', 'Fusion 360', 'Circuit Design', '3D Printing', 'Soldering'],
+		tags: ['SolidWorks', 'Arduino', 'Embedded Systems', 'C++', 'Fusion 360', 'Circuit Design', '3D Printing', 'Soldering'],
 	},
 	{
-		title: 'Datacenter Human-Machine Interace',
+		title: 'Datacenter Human-Machine Interface',
 		description:
-			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live datacenter (DC-1) as part of a Capilano University–Hynes Group research project. Designed Manual Control, Automatic Real-Time Display, and EtherCAT Diagnostics pages to manage fan speeds, compressor states, and air handling parameters. Implemented user control modules with fault handling, enable logic, and custom alarm visual feedback, integrating branding elements for a professional operator interface. Delivered a production-ready system that enhanced technician usability and enabled direct supervisory control over environmental performance.',
+			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live Datacenter (DC-1) as part of a Capilano University–Hynes Group research project. Designed Manual Control, Automatic Real-Time Display, and EtherCAT Diagnostics pages to manage fan speeds, compressor states, and air handling parameters. Implemented user control modules with fault handling, enable logic, and custom alarm visual feedback, integrating branding elements for a professional operator interface. Delivered a production-ready system that enhanced technician usability and enabled direct supervisory control over environmental performance.',
 		preview_description:
-			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live datacenter (DC-1) as part of a Capilano University–Hynes Group research project.',
+			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live Datacenter (DC-1) as part of a Capilano University–Hynes Group research project.',
 		images: [
 			{ src: '/images/projects/datacentre/centre.png', caption: '<b>Datacentre</b>' },
 			{ src: '/images/projects/datacentre/main.png', caption: '<b>Home Page</b>' },
-			{ src: '/images/projects/datacentre/mc.png', caption: '<b>Main Control Page</b>\n\nThis page allows a user to toggle On/Off states of key HVAC machines within the datacenter.' },
+			{ src: '/images/projects/datacentre/mc.png', caption: '<b>Main Control Page</b>\n\nThis page allows a user to toggle On/Off states of key HVAC machines within the Datacenter.' },
 			{ src: '/images/projects/datacentre/artd.png', caption: '<b>Automatic Real Time Control System</b>\n\nIncludes all relevant boolean statuses.\n\nAdditionally Aisle Temperatures and Pressures are displayed.\n\nFan speeds are also visible.' },
 		],
 		tags: ['Beckhoff TwinCAT 3', 'C++', 'HTML5', 'JavaScript'],
@@ -149,7 +164,7 @@ export const projects: Project[] = [
 		title: 'Arduino Robot Muscle',
 		description: 'As a part of UBC Integrated Engineering\'s 2nd Year Capstone, the team and I designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget. Developed a laser-cut tabletop “Master ARM” with potentiometer joints to stream scaled PWM signals to a full-scale “Slave ARM” made of wood/PLA and powered by four high-torque servos on a 7.5 V rail. Engineered a counter-weighted design capable of lifting >400 g at full extension, with each joint achieving ~250° sweep. Delivered a functional prototype meeting all performance specs; planned upgrades include a wearable master sleeve, +2 DOF, and encoder feedback for industrial tele-manipulation applications.',
 		preview_description:
-			'Designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget.',
+			'Designed and built a 4-DOF teleoperated robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget.',
 		images: [
 			{ src: '/images/projects/arm/arm.png', caption: '<b>ARM</b>' },
 			{ src: '/images/projects/arm/base.png', caption: '<b>Base Joint Exploded View</b>' },
@@ -161,10 +176,10 @@ export const projects: Project[] = [
 		title: 'Building Energy Modelling',
 		description: 'Simulated air handling units, chilled water systems, CRAH/CRAC equipment, thermal zones, and server heat loads using BIM-aligned layouts. Analysed power consumption, pinpointed high-load equipment, and tested power scheduling strategies, projecting a 12% reduction in facility energy use. Delivered a validated model to support optimisation decisions, with scope for CFD and HMI integration.',
 		preview_description:
-			'Built a high-fidelity OpenStudio model of a Hynes Group datacenter HVAC system to identify and reduce energy losses.',
+			'Built a high-fidelity OpenStudio model of Hynes Group\'s Datacenter HVAC system to identify and reduce energy losses.',
 		images: [
 			{ src: '/images/projects/bem/bem.png', caption: '<b>Results</b>' },
-			{ src: '/images/projects/bem/dclm.png', caption: '<b>Datecenter Layout Model</b>\n\nIncludes dimensioned aisles for sever racks.' },
+			{ src: '/images/projects/bem/dclm.png', caption: '<b>Datacenter Layout Model</b>\n\nIncludes dimensioned aisles for sever racks.' },
 			{ src: '/images/projects/bem/hvac.png', caption: '<b>Datacenter HVAC Flow Loop</b>' },
 		],
 		tags: ['OpenStudio', 'Building Energy Modelling', 'HVAC Loop Setpoint Optimisation'],
@@ -180,7 +195,7 @@ export const projects: Project[] = [
 			{ src: '/images/projects/dim/2d.png', caption: '<b>AutoCAD 2D Floor Plan Layout</b>\n\nDesigned and drafted a construction-ready floor plan using AutoCAD, showcasing precise room layouts, structural gridlines, and functional zoning.\n\nOrganized elements with a structured layer system and applied industry-standard hatches and lineweights for clear, professional documentation.\n\nEnsured seamless readability for construction teams through clean annotations and architectural conventions.' },
 			{ src: '/images/projects/dim/floor2.png', caption: '<b>2nd Floor View</b>\n\nVisualized a complete two-storey residential structure with integrated balconies, curtain walls, and roofing, emphasizing exterior composition and architectural massing in Revit.' },
 		],
-		tags: ['AutoCAD', 'Revit'],
+		tags: ['AutoCAD', 'Revit', 'Building Information Modelling' , '2D Drafting','Floor Plan Design'],
 	},
 ];
 
