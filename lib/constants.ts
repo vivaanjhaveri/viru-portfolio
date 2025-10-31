@@ -101,6 +101,21 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+		{
+		title: 'Battery Enclosure Finite Element Analysis',
+		preview_description:
+			'Mitigated deflections with FEA software, validating enclosure strength and greenlighting mass manufacturing.',
+		description:
+			'During my 2nd Log9 Materials internship/co-op, I conducted Finite Element Analysis (FEA) on a battery enclosure to ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I recommended design modifications that mitigated excessive deflections, thereby validating the enclosure\'s strength. This work was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
+		images: [
+			{ src: '/images/projects/fea/enclosure.png', caption: '<b>SolidWorks Sheet-metal Enclosure</b>' },
+			{ src: '/images/projects/fea/deflection.png', caption: '<b>Deflections Visualised</b>' },
+			{ src: '/images/projects/fea/stresses.png', caption: '<b>Exaggerated Visual Stress Distribution</b>' },
+			{ src: '/images/projects/fea/moredeflection.png', caption: '<b>Additional Angles</b>' },
+			
+		],
+		tags: ['SolidWorks', 'Ansys Mechanical', 'Static Structural Analysis', 'Finite Element Analysis', 'Computer-Aided Engineering'],
+	},
 	{
 		title: 'Autonomous Solar Panel Cleaning Robot',
 		preview_description:
