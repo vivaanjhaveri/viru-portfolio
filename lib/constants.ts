@@ -125,7 +125,7 @@ export const projects: Project[] = [
 		images: [
 			{ src: '/images/projects/cfd/velocity.png', caption: '<b>Airflow Velocity Distribution in Datacenter</b>' },
 			{ src: '/images/projects/cfd/pathlines.png', caption: '<b>Airflow Thermal Pathlines in Datacenter</b>\n\n<b>Blue pathlines</b> represent cold air supplied by CRAC units.\n\n<b>Green pathlines</b> indicate mixed air regions where cool and warm streams interact.\n\n<b>Yellow pathlines</b> show moderately heated air moving toward exhaust zones.\n\n<b>Red pathlines</b> represent hot exhaust air exiting from the server racks.' },
-			{ src: '/images/projects/cfd/datacenter.png', caption: '<b>Model of Datacenter</b>\n\nDesigned on SolidWorks' },
+			{ src: '/images/projects/cfd/datacenter.png', caption: '<b>Model of Datacenter</b>\n\nDesigned on SolidWorks.' },
 			{ src: '/images/projects/cfd/cabinet.png', caption: '<b>Close-up of Server Cabinet</b>\n\nDesigned on SolidWorks.' },
 
 		],
@@ -144,7 +144,7 @@ export const projects: Project[] = [
 			{ src: '/images/projects/robot/circuit.png', caption: '<b>Circuit Wiring Diagram</b>\n\nDifferent voltage environments were needed for each system to ensure safe operation.\n\n24V: Drum and Rail Motors,\n\n12V: Locomotion Motors and Soap Pumps,\n\n5V: Teensy,\n\n3.3V: ESP' },
 			{ src: '/images/projects/robot/io.png', caption: '<b>IO Pin Diagram</b>' },
 		],
-		tags: ['SolidWorks', 'Machine Design', 'CNC Milling', '3D Printing', 'ESP32', 'Embedded Systems', 'C++', 'Soldering', 'Circuit Design'],
+		tags: ['SolidWorks', 'Machine Design', 'CNC Milling', '3D Printing', 'ESP32', 'Teensy', 'Embedded Systems', 'C++', 'Soldering', 'Circuit Design'],
 	},
 	{
 		title: 'Datacenter Human-Machine Interface',
