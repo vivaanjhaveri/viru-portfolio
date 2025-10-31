@@ -143,7 +143,7 @@ export const projects: Project[] = [
 		tags: ['SolidWorks', 'Embedded Systems / C++', 'Soldering', 'MATLAB', '3D Printing', 'Circuit Design', 'Laser Cutting', 'Woodworking'],
 	},
 	{
-		title: 'Building Energy & Information Management',
+		title: 'Building Energy Modelling',
 		description: 'Simulated air handling units, chilled water systems, CRAH/CRAC equipment, thermal zones, and server heat loads using BIM-aligned layouts. Analysed power consumption, pinpointed high-load equipment, and tested power scheduling strategies, projecting a 12% reduction in facility energy use. Delivered a validated model to support optimisation decisions, with scope for CFD and HMI integration.',
 		preview_description:
 			'Built a high-fidelity OpenStudio model of a Hynes Group datacenter HVAC system to identify and reduce energy losses.',
@@ -152,7 +152,7 @@ export const projects: Project[] = [
 			{ src: '/images/projects/bem/dclm.png', caption: '<b>Datecenter Layout Model</b>\n\nIncludes dimensioned aisles for sever racks.' },
 			{ src: '/images/projects/bem/hvac.png', caption: '<b>Datacenter HVAC Flow Loop</b>' },
 		],
-		tags: ['OpenStudio', 'Building Information Modelling', 'Building Energy Modelling'],
+		tags: ['OpenStudio', 'Building Energy Modelling', 'HVAC Loop Setpoint Optimisation'],
 	},
 	{
 		title: 'Floor Plan & Building Information Modelling',
