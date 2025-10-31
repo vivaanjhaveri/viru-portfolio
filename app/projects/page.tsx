@@ -22,17 +22,6 @@ export default function ProjectsPage() {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A showcase of my engineering projects, demonstrating practical application
               of skills and innovative problem-solving.
-              <br />
-              <br />
-              <motion.span
-                variants={fadeInScale(0.3)}
-                className="text-sm italic text-muted-foreground block"
-              >
-                FEA and CFD samples are{' '}
-                <span className="text-gradient font-bold">not available</span> due to the{' '}
-                <span className="text-gradient font-bold"> non-disclosable </span>
-                nature of my work at Hynes Group & Log9 Materials.
-              </motion.span>
             </p>
             <br />
 
