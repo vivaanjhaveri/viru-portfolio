@@ -124,12 +124,12 @@ export const projects: Project[] = [
 			'During my HVAC Research Assistant Co-op at Hynes Group, I performed Computational Fluid Dynamics (CFD) analysis on a Datacenter environment to optimize airflow and cooling efficiency. Utilizing Ansys Fluent, I created detailed models of the Datacenter layout, including server racks and cooling units. Through simulations, I identified areas of poor airflow and high thermal loads. Based on these insights, I proposed design changes to improve ventilation and reduce hotspots, ultimately enhancing the overall cooling performance of the Datacenter.',
 		images: [
 			{ src: '/images/projects/cfd/velocity.png', caption: '<b>Airflow Velocity Distribution in Datacenter</b>' },
-			{ src: '/images/projects/cfd/pathlines.png', caption: '<b>Airflow Thermal Pathlines in Datacenter</b>\n\nBlue pathlines represent cold air supplied by CRAC units.\nGreen pathlines indicate mixed air regions where cool and warm streams interact.\nYellow pathlines show moderately heated air moving toward exhaust zones.\nRed pathlines represent hot exhaust air exiting from the server racks.' },
+			{ src: '/images/projects/cfd/pathlines.png', caption: '<b>Airflow Thermal Pathlines in Datacenter</b>\n\n<b>Blue pathlines</b> represent cold air supplied by CRAC units.\n\n<b>Green pathlines</b> indicate mixed air regions where cool and warm streams interact.\n\n<b>Yellow pathlines</b> show moderately heated air moving toward exhaust zones.\n\n<b>Red pathlines</b> represent hot exhaust air exiting from the server racks.' },
 			{ src: '/images/projects/cfd/datacenter.png', caption: '<b>Model of Datacenter</b>\n\nDesigned on SolidWorks' },
 			{ src: '/images/projects/cfd/cabinet.png', caption: '<b>Close-up of Server Cabinet</b>\n\nDesigned on SolidWorks.' },
 
 		],
-		tags: ['SolidWorks', 'Ansys Mechanical', 'Static Structural Analysis', 'Finite Element Analysis', 'Computer-Aided Engineering'],
+		tags: ['SolidWorks', 'Ansys Fluent', 'Computational Fluid Dynamics', 'Heat Transfer', 'Computer-Aided Engineering'],
 	},
 	{
 		title: 'Autonomous Solar Panel Cleaning Robot',
@@ -144,7 +144,7 @@ export const projects: Project[] = [
 			{ src: '/images/projects/robot/circuit.png', caption: '<b>Circuit Wiring Diagram</b>\n\nDifferent voltage environments were needed for each system to ensure safe operation.\n\n24V: Drum and Rail Motors,\n\n12V: Locomotion Motors and Soap Pumps,\n\n5V: Teensy,\n\n3.3V: ESP' },
 			{ src: '/images/projects/robot/io.png', caption: '<b>IO Pin Diagram</b>' },
 		],
-		tags: ['SolidWorks', 'Arduino', 'Embedded Systems', 'C++', 'Fusion 360', 'Circuit Design', '3D Printing', 'Soldering'],
+		tags: ['SolidWorks', 'Machine Design', 'CNC Milling', '3D Printing', 'ESP32', 'Embedded Systems', 'C++', 'Soldering', 'Circuit Design'],
 	},
 	{
 		title: 'Datacenter Human-Machine Interface',
