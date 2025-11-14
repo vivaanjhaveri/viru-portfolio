@@ -101,7 +101,7 @@ function ProjectCard({
       setTimeout(() => {
         setCurrentImage(0);
         setShowModal(true);
-      }, 4000);
+      }, 2000);
     }
   }, [shouldOpen]);
 
