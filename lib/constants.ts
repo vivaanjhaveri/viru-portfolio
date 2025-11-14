@@ -1,335 +1,422 @@
 export const siteConfig = {
-	name: 'Engineering Portfolio',
-	description:
-		'A professional portfolio website template for engineering students.',
-	mainNav: [
-		{
-			title: 'Home',
-			href: '/',
-		},
-		{
-			title: 'About',
-			href: '/about',
-		},
-		{
-			title: 'Education',
-			href: '/education',
-		},
-		{
-			title: 'Skills',
-			href: '/skills',
-		},
-		{
-			title: 'Experience',
-			href: '/experience',
-		},
-		{
-			title: 'Projects',
-			href: '/projects',
-		},
-		{
-			title: 'Certificates',
-			href: '/certificates',
-		},
-		{
-			title: 'Contact',
-			href: '/contact',
-		},
-	],
-	links: {
-		linkedin: 'https://www.linkedin.com/in/viru-gurudath/',
-		email: 'mailto:virugurudath@gmail.com',
-		phone: 'tel:+1(604)968-5595',
-	},
+  name: 'Engineering Portfolio',
+  description:
+    'A professional portfolio website template for engineering students.',
+  mainNav: [
+    { title: 'Home', href: '/' },
+    { title: 'About', href: '/about' },
+    { title: 'Education', href: '/education' },
+    { title: 'Skills', href: '/skills' },
+    { title: 'Experience', href: '/experience' },
+    { title: 'Projects', href: '/projects' },
+    { title: 'Certificates', href: '/certificates' },
+    { title: 'Contact', href: '/contact' },
+  ],
+  links: {
+    linkedin: 'https://www.linkedin.com/in/viru-gurudath/',
+    email: 'mailto:virugurudath@gmail.com',
+    phone: 'tel:+1(604)968-5595',
+  },
 };
 
 export type Experience = {
-	title: string;
-	company: string;
-	location: string;
-	startDate: string;
-	endDate: string;
-	description: string[];
-	technologies: string[];
+  title: string;
+  company: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  description: string[];
+  technologies: string[];
 };
 
 export const experiences: Experience[] = [
-	{
-		title: 'Mechatronics Intern/Co-op',
-		company: 'Log9 Materials',
-		location: 'Bangalore, India',
-		startDate: 'May 2024',
-		endDate: 'August 2024',
-		description: [
-			'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times). ',
-			' Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
-		],
-		technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical'],
-	},
-	{
-		title: 'Research Assistant',
-		company: 'Hynes Group / Capilano University',
-		location: 'Vancouver, Canada',
-		startDate: 'May 2023',
-		endDate: 'December 2023',
-		description: [
-			'Interned under Mitacs Accelerate researched based internship program in collaboration with Capilano University & Hynes Group.',
-			'Research focused on Datacenter electrical consumption and heat management strategies using Computer-Aided Design, Building Information Management, Computational Fluid Dynamics, and Human-Machine Interface design.',
-		],
-		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Ansys Fluent', 'Bash', 'OpenStudio', 'TwinCAT 3'],
-	},
-		{
-		title: 'Research and Development Intern/Co-op',
-		company: 'Log9 Materials',
-		location: 'Bangalore, India',
-		startDate: 'May 2022',
-		endDate: 'August 2022',
-		description: [
-			'Led research into next generation product generation on India’s 1st 4W electric skateboard platform, conducted under NDA. ',
-			'Received recognition of CEO, VP of Design, and Technical Team Leads for quality and timeliness of research reports.',
-		],
-		technologies: ['Word', 'Excel', 'BOM Management'],
-	},
+  {
+    title: 'Mechatronics Intern/Co-op',
+    company: 'Log9 Materials',
+    location: 'Bangalore, India',
+    startDate: 'May 2024',
+    endDate: 'August 2024',
+    description: [
+      'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times). ',
+      ' Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
+    ],
+    technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical'],
+  },
+  {
+    title: 'Research Assistant',
+    company: 'Hynes Group / Capilano University',
+    location: 'Vancouver, Canada',
+    startDate: 'May 2023',
+    endDate: 'December 2023',
+    description: [
+      'Interned under Mitacs Accelerate researched based internship program in collaboration with Capilano University & Hynes Group.',
+      'Research focused on Datacenter electrical consumption and heat management strategies using Computer-Aided Design, Building Information Management, Computational Fluid Dynamics, and Human-Machine Interface design.',
+    ],
+    technologies: [
+      'MATLAB',
+      'SolidWorks',
+      'OpenFOAM',
+      'Ansys Fluent',
+      'Bash',
+      'OpenStudio',
+      'TwinCAT 3',
+    ],
+  },
+  {
+    title: 'Research and Development Intern/Co-op',
+    company: 'Log9 Materials',
+    location: 'Bangalore, India',
+    startDate: 'May 2022',
+    endDate: 'August 2022',
+    description: [
+      'Led research into next generation product generation on India’s 1st 4W electric skateboard platform, conducted under NDA. ',
+      'Received recognition of CEO, VP of Design, and Technical Team Leads for quality and timeliness of research reports.',
+    ],
+    technologies: ['Word', 'Excel', 'BOM Management'],
+  },
 ];
 
 export type Project = {
-	title: string;
-	preview_description: string;
-	description: string;
-	images: { src: string; caption: string }[] | string;
-	tags: string[];
+  id: string; // <-- added
+  title: string;
+  preview_description: string;
+  description: string;
+  images: { src: string; caption: string }[] | string;
+  tags: string[];
 };
 
 export const projects: Project[] = [
-		{
-		title: 'Battery Enclosure Structural Analysis',
-		preview_description:
-			'Mitigated deflections with Finite Element Analysis simulations, validating enclosure strength and greenlighting mass manufacturing.',
-		description:
-			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, on SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This <b>mesh-convergent simulation</b> was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
-		images: [
-			{ src: '/images/projects/fea/enclosure.png', caption: '<b>SolidWorks Sheet-metal Enclosure</b>' },
-			{ src: '/images/projects/fea/deflection.png', caption: '<b>Deflections Visualised</b>' },
-			{ src: '/images/projects/fea/stresses.png', caption: '<b>Exaggerated Visual Stress Distribution</b>' },
-			{ src: '/images/projects/fea/moredeflection.png', caption: '<b>Additional Angles</b>' },
-			
-		],
-		tags: ['SolidWorks', 'Ansys Mechanical', 'Static Structural Analysis', 'Finite Element Analysis', 'Computer-Aided Engineering'],
-	},
-			{
-		title: 'Datacenter Airflow Thermal Analysis',
-		preview_description:
-			'Used Computational Fluid Dynamics simulation to plan airflow and cooling efficiency optimisation strategies for a Datacenter.',
-		description:
-			'During my HVAC Research Assistant Co-op at Hynes Group, I performed Computational Fluid Dynamics (CFD) analysis on a Datacenter environment to optimize airflow and cooling efficiency. Utilizing Ansys Fluent, I created detailed models of the Datacenter layout, including server racks and cooling units. Through simulations, I identified areas of poor airflow and high thermal loads. Based on these insights, I proposed design changes to improve ventilation and reduce hotspots, ultimately enhancing the overall cooling performance of the Datacenter.',
-		images: [
-			{ src: '/images/projects/cfd/velocity.png', caption: '<b>Airflow Velocity Distribution in Datacenter</b>' },
-			{ src: '/images/projects/cfd/pathlines.png', caption: '<b>Airflow Thermal Pathlines in Datacenter</b>\n\n<b>Blue pathlines</b> represent cold air supplied by CRAC units.\n\n<b>Green pathlines</b> indicate mixed air regions where cool and warm streams interact.\n\n<b>Yellow pathlines</b> show moderately heated air moving toward exhaust zones.\n\n<b>Red pathlines</b> represent hot exhaust air exiting from the server racks.' },
-			{ src: '/images/projects/cfd/datacenter.png', caption: '<b>Model of Datacenter</b>\n\nDesigned on SolidWorks.' },
-			{ src: '/images/projects/cfd/cabinet.png', caption: '<b>Close-up of Server Cabinet</b>\n\nDesigned on SolidWorks.' },
+  {
+    id: 'battery-enclosure-analysis',
+    title: 'Battery Enclosure Structural Analysis',
+    preview_description:
+      'Mitigated deflections with Finite Element Analysis simulations, validating enclosure strength and greenlighting mass manufacturing.',
+    description:
+      "During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, on SolidWorks that mitigated excessive deflections, thereby validating the enclosure's strength. This <b>mesh-convergent simulation</b> was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.",
+    images: [
+      {
+        src: '/images/projects/fea/enclosure.png',
+        caption: '<b>SolidWorks Sheet-metal Enclosure</b>',
+      },
+      {
+        src: '/images/projects/fea/deflection.png',
+        caption: '<b>Deflections Visualised</b>',
+      },
+      {
+        src: '/images/projects/fea/stresses.png',
+        caption: '<b>Exaggerated Visual Stress Distribution</b>',
+      },
+      {
+        src: '/images/projects/fea/moredeflection.png',
+        caption: '<b>Additional Angles</b>',
+      },
+    ],
+    tags: [
+      'SolidWorks',
+      'Ansys Mechanical',
+      'Static Structural Analysis',
+      'Finite Element Analysis',
+      'Computer-Aided Engineering',
+    ],
+  },
 
-		],
-		tags: ['SolidWorks', 'Ansys Fluent', 'Computational Fluid Dynamics', 'Heat Transfer', 'Computer-Aided Engineering'],
-	},
-	{
-		title: 'Autonomous Solar Panel Cleaning Robot',
-		preview_description:
-			'A fully student designed and manufactured six-wheel rover built to restore and maintain peak solar panel performance funded by UBC\'s Alma Mater Society Sustainability Fund.',
-		description:
-			'As a part of UBC Integrated Engineering\'s 4th Year Capstone, the team and I fully designed a 12 kg, six-wheel rover to restore and maintain peak solar panel performance. This project recieved a generous grant from the Alma Mater Society (AMS) Sustainaibility Fund. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its innovative Rope & Rail Guidance System, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
-		images: [
-			{ src: '/images/projects/robot/solar.png', caption: '<b>Final CAD Model</b>' },
-			{ src: '/images/projects/robot/full_assembly.png', caption: '<b>Full Assembly of Robot</b>' },
-			{ src: '/images/projects/robot/rope_rail.png', caption: '<b>Rope & Rail Guidance System</b>\n\nA motorised rope-and-rail safety gantry with a 110 mm drum and twin 24 V winch motors tether and retrieve the robot, enabling dependable climbs on pitches up to 50 °.\n\nIt also tracks the robot\'s position and follows it, keeping the rope at the most optimal positions to stop the robot from sliding.' },
-			{ src: '/images/projects/robot/circuit.png', caption: '<b>Circuit Wiring Diagram</b>\n\nDifferent voltage environments were needed for each system to ensure safe operation.\n\n24V: Drum and Rail Motors,\n\n12V: Locomotion Motors and Soap Pumps,\n\n5V: Teensy,\n\n3.3V: ESP' },
-			{ src: '/images/projects/robot/io.png', caption: '<b>IO Pin Diagram</b>' },
-		],
-		tags: ['SolidWorks', 'Machine Design', 'CNC Milling', '3D Printing', 'ESP32', 'Teensy', 'Embedded Systems', 'C++', 'Soldering', 'Circuit Design'],
-	},
-	{
-		title: 'Datacenter Human-Machine Interface',
-		description:
-			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live Datacenter (DC-1) as part of a Capilano University–Hynes Group research project. Designed Manual Control, Automatic Real-Time Display, and EtherCAT Diagnostics pages to manage fan speeds, compressor states, and air handling parameters. Implemented user control modules with fault handling, enable logic, and custom alarm visual feedback, integrating branding elements for a professional operator interface. Delivered a production-ready system that enhanced technician usability and enabled direct supervisory control over environmental performance.',
-		preview_description:
-			'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live Datacenter (DC-1) as part of a Capilano University–Hynes Group research project.',
-		images: [
-			{ src: '/images/projects/datacentre/centre.png', caption: '<b>Datacentre</b>' },
-			{ src: '/images/projects/datacentre/main.png', caption: '<b>Home Page</b>' },
-			{ src: '/images/projects/datacentre/mc.png', caption: '<b>Main Control Page</b>\n\nThis page allows a user to toggle On/Off states of key HVAC machines within the Datacenter.' },
-			{ src: '/images/projects/datacentre/artd.png', caption: '<b>Automatic Real Time Control System</b>\n\nIncludes all relevant boolean statuses.\n\nAdditionally Aisle Temperatures and Pressures are displayed.\n\nFan speeds are also visible.' },
-		],
-		tags: ['Beckhoff TwinCAT 3', 'C++', 'HTML5', 'JavaScript'],
-	},
-	{
-		title: 'Arduino Robot Muscle',
-		description: 'As a part of UBC Integrated Engineering\'s 2nd Year Capstone, the team and I designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget. Developed a laser-cut tabletop “Master ARM” with potentiometer joints to stream scaled PWM signals to a full-scale “Slave ARM” made of wood/PLA and powered by four high-torque servos on a 7.5 V rail. Engineered a counter-weighted design capable of lifting >400 g at full extension, with each joint achieving ~250° sweep. Delivered a functional prototype meeting all performance specs; planned upgrades include a wearable master sleeve, +2 DOF, and encoder feedback for industrial tele-manipulation applications.',
-		preview_description:
-			'Designed and built a 4-DOF teleoperated robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget.',
-		images: [
-			{ src: '/images/projects/arm/arm.png', caption: '<b>ARM</b>' },
-			{ src: '/images/projects/arm/base.png', caption: '<b>Base Joint Exploded View</b>' },
-			{ src: '/images/projects/arm/mcd.png', caption: '<b>Main Wiring Diagram</b>\n\nIllustrates Master-Slave configuration.\n\nPotentiometers send signals to Arduino which then send PWM signals to high torque Servo motors.' },
-		],
-		tags: ['SolidWorks', 'Embedded Systems / C++', 'Soldering', 'MATLAB', '3D Printing', 'Circuit Design', 'Laser Cutting', 'Woodworking'],
-	},
-	{
-		title: 'Building Energy Modelling',
-		description: 'Simulated air handling units, chilled water systems, CRAH/CRAC equipment, thermal zones, and server heat loads using BIM-aligned layouts. Analysed power consumption, pinpointed high-load equipment, and tested power scheduling strategies, projecting a 12% reduction in facility energy use. Delivered a validated model to support optimisation decisions, with scope for CFD and HMI integration.',
-		preview_description:
-			'Built a high-fidelity OpenStudio model of Hynes Group\'s Datacenter HVAC system to identify and reduce energy losses.',
-		images: [
-			{ src: '/images/projects/bem/bem.png', caption: '<b>Results</b>' },
-			{ src: '/images/projects/bem/dclm.png', caption: '<b>Datacenter Layout Model</b>\n\nIncludes dimensioned aisles for sever racks.' },
-			{ src: '/images/projects/bem/hvac.png', caption: '<b>Datacenter HVAC Flow Loop</b>' },
-		],
-		tags: ['OpenStudio', 'Building Energy Modelling', 'HVAC Loop Setpoint Optimisation'],
-	},
-	{
-		title: 'Floor Plan & Building Information Modelling',
-		description:
-			'This section includes personal Floor Plan Layouts I have drafted in AutoCAD and also results of Building Information Management (BIM) using Autodesk Revit. I believe this highlights my self-starter philosophy and illustrates my ability to adapt and assimilate quickly with different technologies.',
-		preview_description:
-			'Illustrated my self-starter attitude by teaching myself 2D AutoCAD drafting and BIM from Revit.',
-		images: [
-			{ src: '/images/projects/dim/dim.png', caption: '<b>3D Building Model</b>' },
-			{ src: '/images/projects/dim/2d.png', caption: '<b>AutoCAD 2D Floor Plan Layout</b>\n\nDesigned and drafted a construction-ready floor plan using AutoCAD, showcasing precise room layouts, structural gridlines, and functional zoning.\n\nOrganized elements with a structured layer system and applied industry-standard hatches and lineweights for clear, professional documentation.\n\nEnsured seamless readability for construction teams through clean annotations and architectural conventions.' },
-			{ src: '/images/projects/dim/floor2.png', caption: '<b>2nd Floor View</b>\n\nVisualized a complete two-storey residential structure with integrated balconies, curtain walls, and roofing, emphasizing exterior composition and architectural massing in Revit.' },
-		],
-		tags: ['AutoCAD', 'Revit', 'Building Information Modelling' , '2D Drafting','Floor Plan Design'],
-	},
+  {
+    id: 'datacenter-airflow-analysis',
+    title: 'Datacenter Airflow Thermal Analysis',
+    preview_description:
+      'Used Computational Fluid Dynamics simulation to plan airflow and cooling efficiency optimisation strategies for a Datacenter.',
+    description:
+      'During my HVAC Research Assistant Co-op at Hynes Group, I performed Computational Fluid Dynamics (CFD) analysis on a Datacenter environment to optimize airflow and cooling efficiency. Utilizing Ansys Fluent, I created detailed models of the Datacenter layout, including server racks and cooling units. Through simulations, I identified areas of poor airflow and high thermal loads. Based on these insights, I proposed design changes to improve ventilation and reduce hotspots, ultimately enhancing the overall cooling performance of the Datacenter.',
+    images: [
+      {
+        src: '/images/projects/cfd/velocity.png',
+        caption: '<b>Airflow Velocity Distribution in Datacenter</b>',
+      },
+      {
+        src: '/images/projects/cfd/pathlines.png',
+        caption:
+          '<b>Airflow Thermal Pathlines in Datacenter</b>\n\n<b>Blue pathlines</b> represent cold air supplied by CRAC units.\n\n<b>Green pathlines</b> indicate mixed air regions where cool and warm streams interact.\n\n<b>Yellow pathlines</b> show moderately heated air moving toward exhaust zones.\n\n<b>Red pathlines</b> represent hot exhaust air exiting from the server racks.',
+      },
+      {
+        src: '/images/projects/cfd/datacenter.png',
+        caption: '<b>Model of Datacenter</b>\n\nDesigned on SolidWorks.',
+      },
+      {
+        src: '/images/projects/cfd/cabinet.png',
+        caption:
+          '<b>Close-up of Server Cabinet</b>\n\nDesigned on SolidWorks.',
+      },
+    ],
+    tags: [
+      'SolidWorks',
+      'Ansys Fluent',
+      'Computational Fluid Dynamics',
+      'Heat Transfer',
+      'Computer-Aided Engineering',
+    ],
+  },
+
+  {
+    id: 'solar-panel-cleaning-robot',
+    title: 'Autonomous Solar Panel Cleaning Robot',
+    preview_description:
+      "A fully student designed and manufactured six-wheel rover built to restore and maintain peak solar panel performance funded by UBC's Alma Mater Society Sustainability Fund.",
+    description:
+      "As a part of UBC Integrated Engineering's 4th Year Capstone, the team and I fully designed a 12 kg, six-wheel rover to restore and maintain peak solar panel performance. This project recieved a generous grant from the Alma Mater Society (AMS) Sustainaibility Fund. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its innovative Rope & Rail Guidance System, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.",
+    images: [
+      { src: '/images/projects/robot/solar.png', caption: '<b>Final CAD Model</b>' },
+      { src: '/images/projects/robot/full_assembly.png', caption: '<b>Full Assembly of Robot</b>' },
+      {
+        src: '/images/projects/robot/rope_rail.png',
+        caption:
+          "<b>Rope & Rail Guidance System</b>\n\nA motorised rope-and-rail safety gantry with a 110 mm drum and twin 24 V winch motors tether and retrieve the robot, enabling dependable climbs on pitches up to 50 °.\n\nIt also tracks the robot's position and follows it, keeping the rope at the most optimal positions to stop the robot from sliding.",
+      },
+      {
+        src: '/images/projects/robot/circuit.png',
+        caption:
+          "<b>Circuit Wiring Diagram</b>\n\nDifferent voltage environments were needed for each system to ensure safe operation.\n\n24V: Drum and Rail Motors,\n\n12V: Locomotion Motors and Soap Pumps,\n\n5V: Teensy,\n\n3.3V: ESP",
+      },
+      { src: '/images/projects/robot/io.png', caption: '<b>IO Pin Diagram</b>' },
+    ],
+    tags: [
+      'SolidWorks',
+      'Machine Design',
+      'CNC Milling',
+      '3D Printing',
+      'ESP32',
+      'Teensy',
+      'Embedded Systems',
+      'C++',
+      'Soldering',
+      'Circuit Design',
+    ],
+  },
+
+  {
+    id: 'datacenter-hmi',
+    title: 'Datacenter Human-Machine Interface',
+    preview_description:
+      'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live Datacenter (DC-1) as part of a Capilano University–Hynes Group research project.',
+    description:
+      'Developed and deployed a Human-Machine Interface (HMI) in Beckhoff TwinCAT 3 for real-time control and monitoring of HVAC systems in a live Datacenter (DC-1)...',
+    images: [
+      { src: '/images/projects/datacentre/centre.png', caption: '<b>Datacentre</b>' },
+      { src: '/images/projects/datacentre/main.png', caption: '<b>Home Page</b>' },
+      { src: '/images/projects/datacentre/mc.png', caption: '<b>Main Control Page</b>' },
+      { src: '/images/projects/datacentre/artd.png', caption: '<b>Automatic Real Time Control System</b>' },
+    ],
+    tags: ['Beckhoff TwinCAT 3', 'C++', 'HTML5', 'JavaScript'],
+  },
+
+  {
+    id: 'arduino-robot-muscle',
+    title: 'Arduino Robot Muscle',
+    preview_description:
+      'Designed and built a 4-DOF teleoperated robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget.',
+    description:
+      "As a part of UBC Integrated Engineering's 2nd Year Capstone, the team and I designed and built a 4-DOF master–slave robotic arm capable of replicating operator motions in <300 ms with ±1 cm accuracy on a $323 budget...",
+    images: [
+      { src: '/images/projects/arm/arm.png', caption: '<b>ARM</b>' },
+      { src: '/images/projects/arm/base.png', caption: '<b>Base Joint Exploded View</b>' },
+      {
+        src: '/images/projects/arm/mcd.png',
+        caption:
+          '<b>Main Wiring Diagram</b>\n\nIllustrates Master-Slave configuration.\n\nPotentiometers send signals to Arduino which then send PWM signals to high torque Servo motors.',
+      },
+    ],
+    tags: [
+      'SolidWorks',
+      'Embedded Systems / C++',
+      'Soldering',
+      'MATLAB',
+      '3D Printing',
+      'Circuit Design',
+      'Laser Cutting',
+      'Woodworking',
+    ],
+  },
+
+  {
+    id: 'building-energy-modelling',
+    title: 'Building Energy Modelling',
+    preview_description:
+      "Built a high-fidelity OpenStudio model of Hynes Group's Datacenter HVAC system to identify and reduce energy losses.",
+    description:
+      'Simulated air handling units, chilled water systems, CRAH/CRAC equipment, thermal zones, and server heat loads using BIM-aligned layouts. Analysed power consumption, pinpointed high-load equipment, and tested power scheduling strategies, projecting a 12% reduction in facility energy use. Delivered a validated model to support optimisation decisions, with scope for CFD and HMI integration.',
+    images: [
+      { src: '/images/projects/bem/bem.png', caption: '<b>Results</b>' },
+      {
+        src: '/images/projects/bem/dclm.png',
+        caption:
+          '<b>Datacenter Layout Model</b>\n\nIncludes dimensioned aisles for sever racks.',
+      },
+      {
+        src: '/images/projects/bem/hvac.png',
+        caption: '<b>Datacenter HVAC Flow Loop</b>',
+      },
+    ],
+    tags: [
+      'OpenStudio',
+      'Building Energy Modelling',
+      'HVAC Loop Setpoint Optimisation',
+    ],
+  },
+
+  {
+    id: 'floorplan-bim',
+    title: 'Floor Plan & Building Information Modelling',
+    preview_description:
+      'Illustrated my self-starter attitude by teaching myself 2D AutoCAD drafting and BIM from Revit.',
+    description:
+      'This section includes personal Floor Plan Layouts I have drafted in AutoCAD and also results of Building Information Management (BIM) using Autodesk Revit. I believe this highlights my self-starter philosophy and illustrates my ability to adapt and assimilate quickly with different technologies.',
+    images: [
+      { src: '/images/projects/dim/dim.png', caption: '<b>3D Building Model</b>' },
+      {
+        src: '/images/projects/dim/2d.png',
+        caption:
+          "<b>AutoCAD 2D Floor Plan Layout</b>\n\nDesigned and drafted a construction-ready floor plan using AutoCAD, showcasing precise room layouts, structural gridlines, and functional zoning.\n\nOrganized elements with a structured layer system and applied industry-standard hatches and lineweights for clear, professional documentation.\n\nEnsured seamless readability for construction teams through clean annotations and architectural conventions.",
+      },
+      {
+        src: '/images/projects/dim/floor2.png',
+        caption:
+          '<b>2nd Floor View</b>\n\nVisualized a complete two-storey residential structure with integrated balconies, curtain walls, and roofing, emphasizing exterior composition and architectural massing in Revit.',
+      },
+    ],
+    tags: [
+      'AutoCAD',
+      'Revit',
+      'Building Information Modelling',
+      '2D Drafting',
+      'Floor Plan Design',
+    ],
+  },
 ];
 
 export type Education = {
-	degree: string;
-	field: string;
-	institution: string;
-	location: string;
-	startDate: string;
-	endDate: string;
-	gpa?: string;
-	achievements: string[];
-	courses: string[];
+  degree: string;
+  field: string;
+  institution: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  gpa?: string;
+  achievements: string[];
+  courses: string[];
 };
 
 export const education: Education[] = [
-	{
-		degree: 'Bachelor of Applied Science',
-		field: 'Integrated Engineering',
-		institution: 'University of British Columbia',
-		location: 'Vancouver, Canada',
-		startDate: 'September 2020',
-		endDate: 'April 2025',
-		gpa: '3.75/4.33',
-		achievements: [
-			'Degree with Distinction (2025)',
-			'Dean\'s List 2021/22, 2020/21',
-			'Oustanding International Student Award (2020)',
-		],
-		courses: [
-			'<b>MECH 260:</b> Introduction to Mechanics of Materials <b><i>(A+)</i></b>',
-			'<b>MECH 327:</b> Thermodynamics II <b><i>(A-)</i></b>',
-			'<b>MECH 360:</b> Mechanics of Materials <b><i>(A-)</i></b>',
-			'<b>MECH 375:</b> Heat Transfer <b><i>(B)</i></b>',
-			'<b>MECH 463:</b> Mechanical Vibrations <b><i>(A-)</i></b>',
-			'<b>MECH 478:</b> Internal Combustion Engines <b><i>(A)</i></b>',
-			'<b>ELEC 204:</b> Linear Circuits <b><i>(A+)</i></b>',
-			'<b>ELEC 341:</b> Systems and Control <b><i>(B+)</i></b>',
-			'<b>ELEC 344:</b> Applied Electronics and Electromechanics<b><i>(A-)</i></b>',
-			'<b>ELEC 352:</b> Electric Energy Systems <b><i>(B)</i></b>',
-			'<b>ELEC 315:</b> Electronic Materials and Devices <b><i>(A)</i></b>',
-		],
-	},
-	{
-		degree: 'International Baccalaureate Diploma Programme',
-		field: 'Science and Mathematics',
-		institution: 'Canadian International School',
-		location: 'Bangalore, India',
-		startDate: 'August 2018',
-		endDate: 'June 2020',
-		achievements: [
-			'Student Council President',
-			'LEO Club President',
-			'Honour Roll (every single term since 6th grade)',
-		],
-		courses: [
-			'<b>HL</b>: Mathematics, Physics, Business',
-			'<b>SL</b>: English, Spanish ab Initio, Chemistry',
-		],
-	},
+  {
+    degree: 'Bachelor of Applied Science',
+    field: 'Integrated Engineering',
+    institution: 'University of British Columbia',
+    location: 'Vancouver, Canada',
+    startDate: 'September 2020',
+    endDate: 'April 2025',
+    gpa: '3.75/4.33',
+    achievements: [
+      "Degree with Distinction (2025)",
+      "Dean's List 2021/22, 2020/21",
+      'Oustanding International Student Award (2020)',
+    ],
+    courses: [
+      '<b>MECH 260:</b> Introduction to Mechanics of Materials <b><i>(A+)</i></b>',
+      '<b>MECH 327:</b> Thermodynamics II <b><i>(A-)</i></b>',
+      '<b>MECH 360:</b> Mechanics of Materials <b><i>(A-)</i></b>',
+      '<b>MECH 375:</b> Heat Transfer <b><i>(B)</i></b>',
+      '<b>MECH 463:</b> Mechanical Vibrations <b><i>(A-)</i></b>',
+      '<b>MECH 478:</b> Internal Combustion Engines <b><i>(A)</i></b>',
+      '<b>ELEC 204:</b> Linear Circuits <b><i>(A+)</i></b>',
+      '<b>ELEC 341:</b> Systems and Control <b><i>(B+)</i></b>',
+      '<b>ELEC 344:</b> Applied Electronics and Electromechanics<b><i>(A-)</i></b>',
+      '<b>ELEC 352:</b> Electric Energy Systems <b><i>(B)</i></b>',
+      '<b>ELEC 315:</b> Electronic Materials and Devices <b><i>(A)</i></b>',
+    ],
+  },
+  {
+    degree: 'International Baccalaureate Diploma Programme',
+    field: 'Science and Mathematics',
+    institution: 'Canadian International School',
+    location: 'Bangalore, India',
+    startDate: 'August 2018',
+    endDate: 'June 2020',
+    achievements: [
+      'Student Council President',
+      'LEO Club President',
+      'Honour Roll (every single term since 6th grade)',
+    ],
+    courses: [
+      '<b>HL</b>: Mathematics, Physics, Business',
+      '<b>SL</b>: English, Spanish ab Initio, Chemistry',
+    ],
+  },
 ];
 
 export type Certificate = {
-	title: string;
-	issuer: string;
-	date: string;
-	id?: string;
-	url?: string;
-	pdf?: string;
+  title: string;
+  issuer: string;
+  date: string;
+  id?: string;
+  url?: string;
+  pdf?: string;
 };
 
 export const certificates: Certificate[] = [
-	{
-		title: 'Engineer-in-Training Designation',
-		issuer: 'Engineers and Geoscientists British Columbia',
-		date: 'August 2025',
-		id: '',
-		url: '#',
-		pdf: '#',
-	},
-	{
-		title: 'IB Diploma',
-		issuer: 'International Baccalaureate Diploma Programme',
-		date: 'April 2020',
-		id: '',
-		url: '#',
-		pdf: '#',
-	},
+  {
+    title: 'Engineer-in-Training Designation',
+    issuer: 'Engineers and Geoscientists British Columbia',
+    date: 'August 2025',
+    id: '',
+    url: '#',
+    pdf: '#',
+  },
+  {
+    title: 'IB Diploma',
+    issuer: 'International Baccalaureate Diploma Programme',
+    date: 'April 2020',
+    id: '',
+    url: '#',
+    pdf: '#',
+  },
 ];
 
 export type Skill = {
-	name: string;
-	level: number; // 1-10
-	category: 'technical' | 'software' | 'soft' | 'language';
+  name: string;
+  level: number;
+  category: 'technical' | 'software' | 'soft' | 'language';
 };
 
 export const skills: Skill[] = [
-	// Technical Skills
-	{ name: 'Embedded Systems', level: 7, category: 'technical' },
-	{ name: 'Thermodynamics', level: 8, category: 'technical' },
-	{ name: 'Control Systems', level: 8, category: 'technical' },
-	{ name: 'Circuit Design', level: 6, category: 'technical' },
-	{ name: 'Heat Transfer', level: 7, category: 'technical' },
+  { name: 'Embedded Systems', level: 7, category: 'technical' },
+  { name: 'Thermodynamics', level: 8, category: 'technical' },
+  { name: 'Control Systems', level: 8, category: 'technical' },
+  { name: 'Circuit Design', level: 6, category: 'technical' },
+  { name: 'Heat Transfer', level: 7, category: 'technical' },
 
-	// Software Skills
-	{ name: 'MATLAB', level: 8, category: 'software' },
-	{ name: 'AutoCAD', level: 7, category: 'software' },
-	{ name: 'SolidWorks', level: 8, category: 'software' },
-	{ name: 'Revit', level: 6, category: 'software' },
-	{ name: 'C / C++', level: 6, category: 'software' },
-	{ name: 'Ansys Mechanical', level: 7, category: 'software' },
-	{ name: 'Ansys Fluent', level: 7, category: 'software' },
-	{ name: 'TypeScript / JavaScript', level: 7, category: 'software' },
-	{ name: 'CSS', level: 7, category: 'software' },
-	
+  { name: 'MATLAB', level: 8, category: 'software' },
+  { name: 'AutoCAD', level: 7, category: 'software' },
+  { name: 'SolidWorks', level: 8, category: 'software' },
+  { name: 'Revit', level: 6, category: 'software' },
+  { name: 'C / C++', level: 6, category: 'software' },
+  { name: 'Ansys Mechanical', level: 7, category: 'software' },
+  { name: 'Ansys Fluent', level: 7, category: 'software' },
+  { name: 'TypeScript / JavaScript', level: 7, category: 'software' },
+  { name: 'CSS', level: 7, category: 'software' },
 
-	// Soft Skills
-	{ name: 'Problem Solving', level: 9, category: 'soft' },
-	{ name: 'Team Leadership', level: 9, category: 'soft' },
-	{ name: 'Project Management', level: 7, category: 'soft' },
-	{ name: 'Technical Writing', level: 9, category: 'soft' },
-	{ name: 'Presentation', level: 7, category: 'soft' },
+  { name: 'Problem Solving', level: 9, category: 'soft' },
+  { name: 'Team Leadership', level: 9, category: 'soft' },
+  { name: 'Project Management', level: 7, category: 'soft' },
+  { name: 'Technical Writing', level: 9, category: 'soft' },
+  { name: 'Presentation', level: 7, category: 'soft' },
 
-	// Languages
-	{ name: 'English', level: 10, category: 'language' },
-	{ name: 'Spanish', level: 6, category: 'language' },
+  { name: 'English', level: 10, category: 'language' },
+  { name: 'Spanish', level: 6, category: 'language' },
 ];
 
 export type BlogPost = {
-	title: string;
-	excerpt: string;
-	date: string;
-	author: string;
-	image: string;
-	slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  image: string;
+  slug: string;
 };
-;

@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Github, ExternalLink, X, FileDown } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ExternalLink, X, FileDown } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -13,6 +14,9 @@ import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
 export default function ProjectsPage() {
+  const params = useSearchParams();
+  const openProject = params.get("open");
+
   return (
     <div className="py-16 md:py-24">
       <div className="container">
@@ -31,12 +35,8 @@ export default function ProjectsPage() {
               </Link>
             </Button>
 
-            {/* Password protection note */}
             <p className="text-center text-sm md:text-base mt-4">
-              <span className="text-gradient">
-                The file above is encrypted. Please use the form on my{' '}
-              </span>
-
+              <span className="text-gradient">The file above is encrypted. Please use the form on my </span>
               <Link
                 href="/contact"
                 className="relative font-bold text-muted-foreground 
@@ -46,14 +46,18 @@ export default function ProjectsPage() {
               >
                 Contact
               </Link>
-
               <span className="text-gradient"> page to request the password.</span>
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} delay={index * 0.1} />
+              <ProjectCard
+                key={index}
+                project={project}
+                delay={index * 0.1}
+                shouldOpen={openProject === project.id}
+              />
             ))}
           </div>
         </motion.div>
@@ -62,11 +66,26 @@ export default function ProjectsPage() {
   );
 }
 
-function ProjectCard({ project, delay }: { project: any; delay: number }) {
+function ProjectCard({
+  project,
+  delay,
+  shouldOpen,
+}: {
+  project: any;
+  delay: number;
+  shouldOpen: boolean;
+}) {
   const [currentImage, setCurrentImage] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
   const hasImages = Array.isArray(project.images) && project.images.length > 0;
+
+  useEffect(() => {
+    if (shouldOpen) {
+      setCurrentImage(0);
+      setShowModal(true);
+    }
+  }, [shouldOpen]);
 
   useEffect(() => {
     if (!hasImages || showModal) return;
@@ -76,13 +95,11 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
     return () => clearInterval(interval);
   }, [project.images, hasImages, showModal]);
 
-  const nextImage = () => {
+  const nextImage = () =>
     setCurrentImage((prev) => (prev + 1) % project.images.length);
-  };
 
-  const prevImage = () => {
+  const prevImage = () =>
     setCurrentImage((prev) => (prev - 1 + project.images.length) % project.images.length);
-  };
 
   const current = project.images?.[currentImage];
 
@@ -114,6 +131,7 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
             >
               <ArrowLeft className="w-4 h-4" />
             </button>
+
             <button
               onClick={nextImage}
               className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full z-10"
@@ -204,4 +222,3 @@ function ProjectCard({ project, delay }: { project: any; delay: number }) {
     </motion.div>
   );
 }
-
