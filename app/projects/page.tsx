@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, ExternalLink, X, FileDown } from 'lucide-react';
-import { useSearchParams } from 'next/navigation';
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -14,8 +13,14 @@ import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
 export default function ProjectsPage() {
-  const params = useSearchParams();
-  const openProject = params.get("open");
+  const [openProject, setOpenProject] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const url = new URL(window.location.href);
+    const value = url.searchParams.get('open');
+    setOpenProject(value);
+  }, []);
 
   return (
     <div className="py-16 md:py-24">
@@ -36,7 +41,9 @@ export default function ProjectsPage() {
             </Button>
 
             <p className="text-center text-sm md:text-base mt-4">
-              <span className="text-gradient">The file above is encrypted. Please use the form on my </span>
+              <span className="text-gradient">
+                The file above is encrypted. Please use the form on my{' '}
+              </span>
               <Link
                 href="/contact"
                 className="relative font-bold text-muted-foreground 
@@ -99,7 +106,9 @@ function ProjectCard({
     setCurrentImage((prev) => (prev + 1) % project.images.length);
 
   const prevImage = () =>
-    setCurrentImage((prev) => (prev - 1 + project.images.length) % project.images.length);
+    setCurrentImage(
+      (prev) => (prev - 1 + project.images.length) % project.images.length,
+    );
 
   const current = project.images?.[currentImage];
 
@@ -155,7 +164,9 @@ function ProjectCard({
 
         <CardContent className="flex-grow p-6">
           <h3 className="font-bold text-2xl mb-2">{project.title}</h3>
-          <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
+          <p className="text-muted-foreground mb-4 text-sm">
+            {project.description}
+          </p>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag: string, tagIndex: number) => (
               <Badge key={tagIndex} variant="secondary">
