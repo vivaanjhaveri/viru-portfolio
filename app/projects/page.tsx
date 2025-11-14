@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -15,6 +15,7 @@ import { staggerContainer, fadeInScale } from '@/lib/motion';
 export default function ProjectsPage() {
   const [openProject, setOpenProject] = useState<string | null>(null);
 
+  // Read ?open=... manually (works in browser & Vercel, no hydration mismatch)
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const url = new URL(window.location.href);
@@ -26,6 +27,7 @@ export default function ProjectsPage() {
     <div className="py-16 md:py-24">
       <div className="container">
         <motion.div variants={staggerContainer()} initial="hidden" animate="show">
+
           <motion.div variants={fadeInScale(0.2)} className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">Projects</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -41,9 +43,7 @@ export default function ProjectsPage() {
             </Button>
 
             <p className="text-center text-sm md:text-base mt-4">
-              <span className="text-gradient">
-                The file above is encrypted. Please use the form on my{' '}
-              </span>
+              <span className="text-gradient">The file above is encrypted. Please use the form on my </span>
               <Link
                 href="/contact"
                 className="relative font-bold text-muted-foreground 
@@ -60,13 +60,14 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
               <ProjectCard
-                key={index}
+                key={project.id}
                 project={project}
                 delay={index * 0.1}
                 shouldOpen={openProject === project.id}
               />
             ))}
           </div>
+
         </motion.div>
       </div>
     </div>
@@ -84,16 +85,27 @@ function ProjectCard({
 }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [showModal, setShowModal] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const hasImages = Array.isArray(project.images) && project.images.length > 0;
 
+  // Smooth scroll to this project when deep-linked
   useEffect(() => {
     if (shouldOpen) {
-      setCurrentImage(0);
-      setShowModal(true);
+      cardRef.current?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+
+      // Delay modal to allow scroll to finish
+      setTimeout(() => {
+        setCurrentImage(0);
+        setShowModal(true);
+      }, 400);
     }
   }, [shouldOpen]);
 
+  // Auto-rotate carousel only when modal is closed
   useEffect(() => {
     if (!hasImages || showModal) return;
     const interval = setInterval(() => {
@@ -107,13 +119,13 @@ function ProjectCard({
 
   const prevImage = () =>
     setCurrentImage(
-      (prev) => (prev - 1 + project.images.length) % project.images.length,
+      (prev) => (prev - 1 + project.images.length) % project.images.length
     );
 
   const current = project.images?.[currentImage];
 
   return (
-    <motion.div variants={fadeInScale(delay)} className="flex">
+    <motion.div ref={cardRef} variants={fadeInScale(delay)} className="flex">
       <Card className="flex flex-col h-full w-full max-w-3xl mx-auto card-gradient overflow-hidden">
         {hasImages && (
           <div className="relative h-[620px] w-full">
@@ -164,9 +176,7 @@ function ProjectCard({
 
         <CardContent className="flex-grow p-6">
           <h3 className="font-bold text-2xl mb-2">{project.title}</h3>
-          <p className="text-muted-foreground mb-4 text-sm">
-            {project.description}
-          </p>
+          <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag: string, tagIndex: number) => (
               <Badge key={tagIndex} variant="secondary">
