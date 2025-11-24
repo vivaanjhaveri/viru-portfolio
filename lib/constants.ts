@@ -55,7 +55,7 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
-		title: 'Mechatronics Engineer Intern/Co-op',
+		title: 'Mechatronics Engineer Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
 		startDate: 'May 2024',
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
 		technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical', 'BOM Optimisation', 'Finite Element Analysis', 'Computational Fluid Dynamics'],
 	},
 	{
-		title: 'Research Assistant',
+		title: 'HVAC Research Assistant Co-op',
 		company: 'Hynes Group / Capilano University',
 		location: 'Vancouver, Canada',
 		startDate: 'May 2023',
@@ -79,7 +79,7 @@ export const experiences: Experience[] = [
 		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Ansys Fluent', 'Computational Fluid Dynamics', 'Bash', 'OpenStudio', 'TwinCAT 3'],
 	},
 		{
-		title: 'Research and Development Engineer Intern/Co-op',
+		title: 'Research and Development Engineer Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
 		startDate: 'May 2022',
