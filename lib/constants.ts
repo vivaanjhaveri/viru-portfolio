@@ -55,7 +55,7 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
-		title: 'Mechatronics Intern/Co-op',
+		title: 'Mechatronics Engineer Intern/Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
 		startDate: 'May 2024',
@@ -64,7 +64,7 @@ export const experiences: Experience[] = [
 			'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times). ',
 			' Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
 		],
-		technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical'],
+		technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical', 'BOM Optimisation', 'Finite Element Analysis', 'Computational Fluid Dynamics'],
 	},
 	{
 		title: 'Research Assistant',
@@ -76,10 +76,10 @@ export const experiences: Experience[] = [
 			'Interned under Mitacs Accelerate researched based internship program in collaboration with Capilano University & Hynes Group.',
 			'Research focused on Datacenter electrical consumption and heat management strategies using Computer-Aided Design, Building Information Management, Computational Fluid Dynamics, and Human-Machine Interface design.',
 		],
-		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Ansys Fluent', 'Bash', 'OpenStudio', 'TwinCAT 3'],
+		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Ansys Fluent', 'Computational Fluid Dynamics', 'Bash', 'OpenStudio', 'TwinCAT 3'],
 	},
 		{
-		title: 'Research and Development Intern/Co-op',
+		title: 'Research and Development Engineer Intern/Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
 		startDate: 'May 2022',
@@ -88,7 +88,7 @@ export const experiences: Experience[] = [
 			'Led research into next generation product generation on India’s 1st 4W electric skateboard platform, conducted under NDA. ',
 			'Received recognition of CEO, VP of Design, and Technical Team Leads for quality and timeliness of research reports.',
 		],
-		technologies: ['Word', 'Excel', 'BOM Management'],
+		technologies: ['Word', 'Excel', 'BOM Management', 'Mechanical Design', 'Electrical Design', 'Product Research' ],
 	},
 ];
 
