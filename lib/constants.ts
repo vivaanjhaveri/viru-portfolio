@@ -108,7 +108,7 @@ export const projects: Project[] = [
 		preview_description:
 			'Mitigated deflections with Finite Element Analysis simulations, validating enclosure strength and greenlighting mass manufacturing.',
 		description:
-			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, on SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This <b>mesh-convergent simulation</b> was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
+			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, on SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This mesh-convergent simulation was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
 		images: [
 			{ src: '/images/projects/fea/enclosure.png', caption: '<b>SolidWorks Sheet-metal Enclosure</b>' },
 			{ src: '/images/projects/fea/deflection.png', caption: '<b>Deflections Visualised</b>' },
