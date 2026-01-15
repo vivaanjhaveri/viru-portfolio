@@ -55,6 +55,18 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
+		title: 'Application Engineer',
+		company: 'Critical Environment Technologies',
+		location: 'Delta, Canada',
+		startDate: 'January 2026',
+		endDate: 'Present',
+		description: [
+			'Assisted Application Engineering team and troubleshooted Gas Controllers and Detectors with RCA. Analysed Business Floorplans with Bluebeam and AutoCAD to efficiently structure OSHA compliant Gas Detection Systems. ',
+			'Collaborated with Sales, Engineering, and Manufacturing teams to deliver custom solutions for clients in Residential, Data Centre, Hospital, and Industrial environments. ',
+		],
+		technologies: ['ERP', 'Business Central', 'Excel', 'Filemaker', 'MS Visio', 'Root Cause Analysis', 'Gas Detection', 'Bluebeam Revu', 'Embedded Systems'],
+	},
+	{
 		title: 'Mechatronics Engineer Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
@@ -62,7 +74,7 @@ export const experiences: Experience[] = [
 		endDate: 'August 2024',
 		description: [
 			'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times). ',
-			' Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
+			'Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
 		],
 		technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical', 'BOM Optimisation', 'Finite Element Analysis', 'Computational Fluid Dynamics'],
 	},
