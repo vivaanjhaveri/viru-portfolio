@@ -55,6 +55,18 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
+		title: 'Application Engineer',
+		company: 'Critical Environment Technologies',
+		location: 'Delta, Canada',
+		startDate: 'January 2026',
+		endDate: 'Present',
+		description: [
+			'Assisted Application Engineering team and troubleshooted Gas Controllers and Detectors with RCA. Analysed Business Floorplans with Bluebeam and AutoCAD to efficiently structure OSHA compliant Gas Detection Systems. ',
+			'Collaborated with Sales, Engineering, and Manufacturing teams to deliver custom solutions for clients in Residential, Data Centre, Hospital, and Industrial environments. ',
+		],
+		technologies: ['ERP', 'Business Central', 'Excel', 'Filemaker', 'MS Visio', 'Root Cause Analysis', 'Gas Detection', 'Bluebeam Revu', 'Embedded Systems'],
+	},
+	{
 		title: 'Mechatronics Engineer Co-op',
 		company: 'Log9 Materials',
 		location: 'Bangalore, India',
