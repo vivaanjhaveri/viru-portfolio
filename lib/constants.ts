@@ -61,12 +61,12 @@ export const experiences: Experience[] = [
 		startDate: 'January 2026',
 		endDate: 'Present',
 		description: [
-			'Assisted Application Engineering team and troubleshooted Gas Controllers and Detectors with RCA.',
+			'Assisted Application Engineering Team and troubleshooted Gas Controllers and Detectors with Root Cause Analysis.',
 			'Analysed Floorplans with Bluebeam and AutoCAD to efficiently structure ASHRAE and CSA compliant Gas Detection Systems.',
 			'Collaborated with Sales, Engineering, and Manufacturing teams to tailor over $6,000,000 worth of solutions for clients in commercial and industrial environments.',
-			'Designed Control Wiring diagrams with Visio to interlock Gas Detection System with Building Sequence of Operations and Building Automation System.',
+			'Designed "Controls & Wiring" diagrams with Microsoft Visio to adhere Gas Detection System with Buildings\' Sequence of Operations and interlock with Building Automation System.',
 		],
-		technologies: ['Business Central ERP', 'AutoCAD', 'MS Visio', 'Root Cause Analysis', 'Bluebeam Revu'],
+		technologies: [ 'AutoCAD', 'Visio', 'Root Cause Analysis', 'Bluebeam Revu', 'Business Central ERP'],
 	},
 	{
 		title: 'Mechatronics Engineer Co-op',
@@ -82,7 +82,7 @@ export const experiences: Experience[] = [
 	},
 	{
 		title: 'HVAC Research Assistant Co-op',
-		company: 'Mitacs: Capilano University & Hynes Group',
+		company: 'Mitacs',
 		location: 'Vancouver, Canada',
 		startDate: 'May 2023',
 		endDate: 'December 2023',
