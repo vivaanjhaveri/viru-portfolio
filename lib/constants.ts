@@ -61,10 +61,12 @@ export const experiences: Experience[] = [
 		startDate: 'January 2026',
 		endDate: 'Present',
 		description: [
-			'Assisted Application Engineering team and troubleshooted Gas Controllers and Detectors with RCA. Analysed Business Floorplans with Bluebeam and AutoCAD to efficiently structure OSHA compliant Gas Detection Systems. ',
-			'Collaborated with Sales, Engineering, and Manufacturing teams to deliver custom solutions for clients in Residential, Data Centre, Hospital, and Industrial environments. ',
+			'Assisted Application Engineering team and troubleshooted Gas Controllers and Detectors with RCA.',
+			'Analysed Floorplans with Bluebeam and AutoCAD to efficiently structure ASHRAE and CSA compliant Gas Detection Systems.',
+			'Collaborated with Sales, Engineering, and Manufacturing teams to tailor over $6,000,000 worth of solutions for clients in commercial and industrial environments.',
+			'Designed Control Wiring diagrams with Visio to interlock Gas Detection System with Building Sequence of Operations and Building Automation System.',
 		],
-		technologies: ['ERP', 'Business Central', 'Excel', 'Filemaker', 'MS Visio', 'Root Cause Analysis', 'Gas Detection', 'Bluebeam Revu', 'Embedded Systems'],
+		technologies: ['Business Central ERP', 'AutoCAD', 'MS Visio', 'Root Cause Analysis', 'Bluebeam Revu'],
 	},
 	{
 		title: 'Mechatronics Engineer Co-op',
@@ -80,12 +82,12 @@ export const experiences: Experience[] = [
 	},
 	{
 		title: 'HVAC Research Assistant Co-op',
-		company: 'Hynes Group / Capilano University',
+		company: 'Mitacs: Capilano University & Hynes Group',
 		location: 'Vancouver, Canada',
 		startDate: 'May 2023',
 		endDate: 'December 2023',
 		description: [
-			'Interned under Mitacs Accelerate researched based internship program in collaboration with Capilano University & Hynes Group.',
+			'Interned under Mitacs Accelerate research-based internship program in collaboration with Capilano University & Hynes Group.',
 			'Research focused on Datacenter electrical consumption and heat management strategies using Computer-Aided Design, Building Information Management, Computational Fluid Dynamics, and Human-Machine Interface design.',
 		],
 		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Ansys Fluent', 'Computational Fluid Dynamics', 'Bash', 'OpenStudio', 'TwinCAT 3'],
