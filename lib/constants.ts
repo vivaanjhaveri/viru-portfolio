@@ -61,12 +61,10 @@ export const experiences: Experience[] = [
 		startDate: 'January 2026',
 		endDate: 'Present',
 		description: [
-			'Assisted Application Engineering team and troubleshooted Gas Controllers and Detectors with Root Cause Analysis.',
-			'Analysed Business Floorplans with Revu and AutoCAD to efficiently structure ASHRAE 15 and CSA B52 compliant Gas Detection Systems.',
-			'Collaborated with Sales, Engineering, and Manufacturing teams to deliver over $6,000,000 worth of tailored solutions for clients in commercial and industrial environments.',
-			'Designed control wiring diagrams to integrate Gas Detection System with Building Sequence of Operations and Building Automation Systems.',
+			'Assisted Application Engineering team and troubleshooted Gas Controllers and Detectors with RCA. Analysed Business Floorplans with Bluebeam and AutoCAD to efficiently structure OSHA compliant Gas Detection Systems. ',
+			'Collaborated with Sales, Engineering, and Manufacturing teams to deliver custom solutions for clients in Residential, Data Centre, Hospital, and Industrial environments. ',
 		],
-		technologies: ['Business Central ERP', 'AutoCAD', 'MS Visio', 'Root Cause Analysis', 'Bluebeam Revu', 'Embedded Systems'],
+		technologies: ['ERP', 'Business Central', 'Excel', 'Filemaker', 'MS Visio', 'Root Cause Analysis', 'Gas Detection', 'Bluebeam Revu', 'Embedded Systems'],
 	},
 	{
 		title: 'Mechatronics Engineer Co-op',
@@ -75,14 +73,14 @@ export const experiences: Experience[] = [
 		startDate: 'May 2024',
 		endDate: 'August 2024',
 		description: [
-			'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times).',
-			'Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
+			'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times). ',
+			' Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
 		],
 		technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical', 'BOM Optimisation', 'Finite Element Analysis', 'Computational Fluid Dynamics'],
 	},
 	{
 		title: 'HVAC Research Assistant Co-op',
-		company: 'Mitacs: Hynes Group / Capilano University',
+		company: 'Hynes Group / Capilano University',
 		location: 'Vancouver, Canada',
 		startDate: 'May 2023',
 		endDate: 'December 2023',
