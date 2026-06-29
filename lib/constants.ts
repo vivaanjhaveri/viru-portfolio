@@ -246,10 +246,10 @@ export const education: Education[] = [
 			'N/A',
 		],
 		courses: [
-			'<b>MECH ENG C231A:</b> Experiential Advanced Control Design I <b><i>(A+)</i></b>',
-			'<b>MECH ENG 239:</b> Robotic Locomotion <b><i>(A-)</i></b>',
-			'<b>MECH ENG 292C:</b> Advanced Product Development <b><i>(B)</i></b>',
-			'<b>MECH ENG 235:</b> Design of Microprocessor-Based Mechanical Systems <b><i>(A-)</i></b>',
+			'<b>MECH ENG C231A:</b> Experiential Advanced Control Design I <b><i>(N/A)</i></b>',
+			'<b>MECH ENG 239:</b> Robotic Locomotion <b><i>(N/A)</i></b>',
+			'<b>MECH ENG 292C:</b> Advanced Product Development <b><i>(N/A)</i></b>',
+			'<b>MECH ENG 235:</b> Design of Microprocessor-Based Mechanical Systems <b><i>(N/A)</i></b>',
 		],
 	},
 	{
