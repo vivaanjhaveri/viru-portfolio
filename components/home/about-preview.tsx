@@ -42,7 +42,7 @@ export function AboutPreview() {
 						viewport={{ once: true }}
 						className="flex flex-col justify-center"
 					>
-						<h3 className="text-2xl font-bold mb-4">Integrated Engineer in Training</h3>
+						<h3 className="text-2xl font-bold mb-4">Master of Mechanical Engineering @UC Berkeley</h3>
 						<p className="text-muted-foreground mb-6">
 							I'm a dedicated engineering student with a passion for innovation and problem-solving.
 							My academic journey has equipped me with strong technical skills and a deep understanding
@@ -53,7 +53,7 @@ export function AboutPreview() {
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Education</h4>
-									<p className="text-sm text-muted-foreground">B.A.Sc. Integrated Engineering</p>
+									<p className="text-sm text-muted-foreground">M.Eng. – Mechanical Engineering</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
