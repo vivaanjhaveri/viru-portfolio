@@ -21,10 +21,10 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I’m an Integrated Engineering graduate, with Distinction, passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. Growing up, I took inspiration from my Father, a former Mechanical Engineer, and found myself constantly tinkering and disassembling devices to figure out how they work. My passion for Physics only further drove me towards the Sciences and Engineering.
+							I'm a Master of Mechanical Engineering, specialising in Product Design at The University of California, Berkeley. Previously, I was an Integrated Engineering graduate, with Distinction, from The University of British Columbia, passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. Growing up, I took inspiration from my Father, a former Mechanical Engineer, and found myself constantly tinkering and disassembling devices to figure out how they work. My passion for Physics only further drove me towards the Sciences and Engineering.
 						</p>
 						<p className="text-lg text-muted-foreground"> 
-							I’ve worked on projects in robotics, smart monitoring, and renewable energy, focusing on design optimization, simulation workflows, prototyping, and real-time control systems. 
+							I’ve worked on projects in robotics, smart monitoring, gas detection systems, and renewable energy, focusing on design optimization, simulation workflows, prototyping, and real-time control systems. 
 							Outside of my technical Engineering work, I’m a dedicated martial artist, musician, and photographer, which highlights my adaptability, sharpens my creativity, precision, and attention to detail.
 						</p>
 						<div className="space-y-4">
@@ -63,7 +63,7 @@ export default function AboutPage() {
 							<CardContent className="p-6 space-y-4">
 								<h3 className="text-xl font-semibold">Education</h3>
 								<p className="text-muted-foreground">
-									Graduated with Distinction in Integrated Engineering, specialising in Mechanical and Electrical Engineering from The University of British Columbia.
+									Master of Mechanical Engineering at UC Berkeley, specialising in Product Design and Controls. Graduated with Distinction in Integrated Engineering, during undergraduate studies and specialised in Mechanical and Electrical Engineering at The University of British Columbia.
 								</p>
 							</CardContent>
 						</Card>
