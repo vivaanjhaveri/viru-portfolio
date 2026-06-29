@@ -236,7 +236,7 @@ export type Education = {
 export const education: Education[] = [
 	{
 		degree: 'Master of Engineering',
-		field: 'Mechanical Engineering – Product Design and Controls',
+		field: 'Mechanical Engineering: Product Design and Controls',
 		institution: 'University of California, Berkeley',
 		location: 'Berkeley, California, United States of America',
 		startDate: 'August 2026',
@@ -254,7 +254,7 @@ export const education: Education[] = [
 	},
 	{
 		degree: 'Bachelor of Applied Science',
-		field: 'Integrated Engineering',
+		field: 'Integrated Engineering: Mechanical & Electrical Engineering',
 		institution: 'University of British Columbia',
 		location: 'Vancouver, Canada',
 		startDate: 'September 2020',
