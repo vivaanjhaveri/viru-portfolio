@@ -237,7 +237,7 @@ export const education: Education[] = [
 	{
 		degree: 'Master of Engineering',
 		field: 'Mechanical Engineering: Product Design and Controls',
-		institution: 'University of California – Berkeley,',
+		institution: 'University of California – Berkeley',
 		location: 'United States of America',
 		startDate: 'August 2026',
 		endDate: 'May 2027',
