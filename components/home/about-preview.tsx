@@ -14,9 +14,7 @@ export function AboutPreview() {
 	return (
 		<section className="py-16 md:py-24">
 			<div className="container px-4">
-				<SectionHeader
-					title="About Me"
-				/>
+				<SectionHeader title="About Me" />
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
 					<motion.div
@@ -42,7 +40,22 @@ export function AboutPreview() {
 						viewport={{ once: true }}
 						className="flex flex-col justify-center"
 					>
-						<h3 className="text-2xl font-bold mb-4">Master of Mechanical Engineering @UC Berkeley</h3>
+						<h3 className="text-2xl font-bold mb-4">
+							<span>MEng in Mechanical Engineering </span>
+							<span
+								className="font-extrabold"
+								style={{
+									background:
+										'linear-gradient(90deg, #003262 0%, #3B7EA1 48%, #FDB515 52%, #C4820E 100%)',
+									WebkitBackgroundClip: 'text',
+									WebkitTextFillColor: 'transparent',
+									backgroundClip: 'text',
+								}}
+							>
+								@ UC Berkeley
+							</span>
+						</h3>
+
 						<p className="text-muted-foreground mb-6">
 							I'm a dedicated engineering student with a passion for innovation and problem-solving.
 							My academic journey has equipped me with strong technical skills and a deep understanding
@@ -53,21 +66,26 @@ export function AboutPreview() {
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Education</h4>
-									<p className="text-sm text-muted-foreground">M.Eng. – Mechanical Engineering</p>
+									<p className="text-sm text-muted-foreground">
+										MEng – Mechanical Engineering
+									</p>
 								</CardContent>
 							</Card>
+
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Experience</h4>
 									<p className="text-sm text-muted-foreground">3 Years</p>
 								</CardContent>
 							</Card>
+
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Projects</h4>
 									<p className="text-sm text-muted-foreground">7+ Completed</p>
 								</CardContent>
 							</Card>
+
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Awards</h4>
@@ -78,7 +96,8 @@ export function AboutPreview() {
 
 						<Button asChild>
 							<Link href="/about">
-								Learn More <ArrowRight className="ml-2 h-4 w-4" />
+								Learn More
+								<ArrowRight className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>
 					</motion.div>
