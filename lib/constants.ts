@@ -237,8 +237,8 @@ export const education: Education[] = [
 	{
 		degree: 'Master of Engineering',
 		field: 'Mechanical Engineering: Product Design and Controls',
-		institution: 'University of California, Berkeley',
-		location: 'California, United States of America',
+		institution: 'University of California – Berkeley,',
+		location: 'United States of America',
 		startDate: 'August 2026',
 		endDate: 'May 2027',
 		gpa: 'N/A',
@@ -255,8 +255,8 @@ export const education: Education[] = [
 	{
 		degree: 'Bachelor of Applied Science',
 		field: 'Integrated Engineering: Mechanical & Electrical Engineering',
-		institution: 'University of British Columbia',
-		location: 'Vancouver, British Columbia, Canada',
+		institution: 'University of British Columbia – Vancouver',
+		location: 'Canada',
 		startDate: 'September 2020',
 		endDate: 'April 2025',
 		gpa: '3.75/4.33',
@@ -282,8 +282,8 @@ export const education: Education[] = [
 	{
 		degree: 'International Baccalaureate Diploma Programme',
 		field: 'Science and Mathematics',
-		institution: 'Canadian International School',
-		location: 'Bangalore, Karnataka, India',
+		institution: 'Canadian International School Bangalore,',
+		location: 'Karnataka, India',
 		startDate: 'August 2018',
 		endDate: 'June 2020',
 		achievements: [
