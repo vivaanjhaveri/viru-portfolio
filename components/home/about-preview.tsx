@@ -16,7 +16,7 @@ export function AboutPreview() {
 			<div className="container px-4">
 				<SectionHeader title="About Me" />
 
-				<div className="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2">
+				<div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
 					<motion.div
 						variants={fadeIn('right', 0.3)}
 						initial="hidden"
@@ -42,8 +42,18 @@ export function AboutPreview() {
 					>
 						<h3 className="mb-4 text-2xl font-bold">
 							<span>MEng in Mechanical Engineering @ </span>
-							<span style={{ color: '#3B7EA1' }}>UC </span>
-							<span style={{ color: '#FDB515' }}>Berkeley</span>
+							<span
+								className="font-extrabold"
+								style={{
+									background:
+										'linear-gradient(90deg, #3B7EA1 0%, #3B7EA1 45%, #FDB515 100%)',
+									WebkitBackgroundClip: 'text',
+									WebkitTextFillColor: 'transparent',
+									backgroundClip: 'text',
+								}}
+							>
+								University of California, Berkeley
+							</span>
 						</h3>
 
 						<p className="mb-6 text-muted-foreground">
@@ -53,7 +63,7 @@ export function AboutPreview() {
 							real-world challenges.
 						</p>
 
-						<div className="grid grid-cols-2 gap-4 mb-6">
+						<div className="mb-6 grid grid-cols-2 gap-4">
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Education</h4>
