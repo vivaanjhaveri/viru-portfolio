@@ -57,7 +57,21 @@ export function AboutPreview() {
 										color: 'transparent',
 									}}
 								>
-									University of California,&nbsp;
+									University of California
+								</span>
+
+								<span
+									className="mx-2 inline-block font-extrabold"
+									style={{
+										background:
+											'linear-gradient(90deg, #3B7EA1 0%, #FDB515 100%)',
+										WebkitBackgroundClip: 'text',
+										WebkitTextFillColor: 'transparent',
+										backgroundClip: 'text',
+										color: 'transparent',
+									}}
+								>
+									–
 								</span>
 
 								<span
