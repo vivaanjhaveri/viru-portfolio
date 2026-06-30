@@ -102,7 +102,7 @@ export function AboutPreview() {
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Education</h4>
 									<p className="text-sm text-muted-foreground">
-										MEng – Mechanical Engineering
+										M.Eng. – Mechanical Eng.; B.A.Sc. – Integrated Eng.
 									</p>
 								</CardContent>
 							</Card>
