@@ -110,7 +110,7 @@ export function AboutPreview() {
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Experience</h4>
-									<p className="text-sm text-muted-foreground">3 Years</p>
+									<p className="text-sm text-muted-foreground">Industry: 1.5 Years <br /> Research: 1 Year</p>
 								</CardContent>
 							</Card>
 
