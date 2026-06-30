@@ -41,20 +41,38 @@ export function AboutPreview() {
 						className="flex flex-col justify-center"
 					>
 						<h3 className="mb-4 text-2xl font-bold">
-							<span className="block">Master of Engineering in Mechanical Engineering</span>
+							<span className="block">
+								Master of Engineering in Mechanical Engineering
+							</span>
 
-							<span
-								className="mt-1 block font-extrabold"
-								style={{
-									background:
-										'linear-gradient(90deg, #3B7EA1 0%, #5A97B7 22%, #FDB515 100%, #C4820E 100%)',
-									WebkitBackgroundClip: 'text',
-									WebkitTextFillColor: 'transparent',
-									backgroundClip: 'text',
-									color: 'transparent',
-								}}
-							>
-								University of California, Berkeley
+							<span className="mt-1 block">
+								<span
+									className="inline-block font-extrabold"
+									style={{
+										background:
+											'linear-gradient(90deg, #003262 0%, #3B7EA1 100%)',
+										WebkitBackgroundClip: 'text',
+										WebkitTextFillColor: 'transparent',
+										backgroundClip: 'text',
+										color: 'transparent',
+									}}
+								>
+									University of California,&nbsp;
+								</span>
+
+								<span
+									className="inline-block font-extrabold"
+									style={{
+										background:
+											'linear-gradient(90deg, #FDB515 0%, #C4820E 100%)',
+										WebkitBackgroundClip: 'text',
+										WebkitTextFillColor: 'transparent',
+										backgroundClip: 'text',
+										color: 'transparent',
+									}}
+								>
+									Berkeley
+								</span>
 							</span>
 						</h3>
 
