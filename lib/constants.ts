@@ -282,7 +282,7 @@ export const education: Education[] = [
 	{
 		degree: 'International Baccalaureate Diploma Programme',
 		field: 'Science and Mathematics',
-		institution: 'Canadian International School Bangalore,',
+		institution: 'Canadian International School Bangalore',
 		location: 'Karnataka, India',
 		startDate: 'August 2018',
 		endDate: 'June 2020',
