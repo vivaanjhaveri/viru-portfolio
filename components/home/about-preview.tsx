@@ -41,15 +41,17 @@ export function AboutPreview() {
 						className="flex flex-col justify-center"
 					>
 						<h3 className="mb-4 text-2xl font-bold">
-							<span>MEng in Mechanical Engineering @ </span>
+							<span className="block">Master of Engineering in Mechanical Engineering</span>
+
 							<span
-								className="font-extrabold"
+								className="mt-1 block font-extrabold"
 								style={{
 									background:
-										'linear-gradient(90deg, #3B7EA1 0%, #3B7EA1 45%, #FDB515 100%)',
+										'linear-gradient(90deg, #003262 0%, #3B7EA1 33.33%, #FDB515 66.66%, #C4820E 100%)',
 									WebkitBackgroundClip: 'text',
 									WebkitTextFillColor: 'transparent',
 									backgroundClip: 'text',
+									color: 'transparent',
 								}}
 							>
 								University of California, Berkeley
