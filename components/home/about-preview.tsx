@@ -47,7 +47,7 @@ export function AboutPreview() {
 								className="mt-1 block font-extrabold"
 								style={{
 									background:
-										'linear-gradient(90deg, #003262 0%, #3B7EA1 33.33%, #FDB515 66.66%, #C4820E 100%)',
+										'linear-gradient(90deg, #3B7EA1 0%, #5A97B7 22%, #FDB515 50%, #C4820E 100%)',
 									WebkitBackgroundClip: 'text',
 									WebkitTextFillColor: 'transparent',
 									backgroundClip: 'text',
