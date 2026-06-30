@@ -64,7 +64,7 @@ export function AboutPreview() {
 									className="inline-block font-extrabold"
 									style={{
 										background:
-											'linear-gradient(90deg, #FDB515 0%, #C4820E 100%)',
+											'linear-gradient(90deg, #FDB515 100%, #C4820E 100%)',
 										WebkitBackgroundClip: 'text',
 										WebkitTextFillColor: 'transparent',
 										backgroundClip: 'text',
