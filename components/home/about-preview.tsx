@@ -16,13 +16,13 @@ export function AboutPreview() {
 			<div className="container px-4">
 				<SectionHeader title="About Me" />
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+				<div className="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2">
 					<motion.div
 						variants={fadeIn('right', 0.3)}
 						initial="hidden"
 						whileInView="show"
 						viewport={{ once: true }}
-						className="relative h-[600px] rounded-lg overflow-hidden"
+						className="relative h-[600px] overflow-hidden rounded-lg"
 					>
 						<Image
 							src="/images/photo.png"
@@ -40,26 +40,17 @@ export function AboutPreview() {
 						viewport={{ once: true }}
 						className="flex flex-col justify-center"
 					>
-						<h3 className="text-2xl font-bold mb-4">
-							<span>MEng in Mechanical Engineering </span>
-							<span
-								className="font-extrabold"
-								style={{
-									background:
-										'linear-gradient(90deg, #003262 0%, #3B7EA1 48%, #FDB515 52%, #C4820E 100%)',
-									WebkitBackgroundClip: 'text',
-									WebkitTextFillColor: 'transparent',
-									backgroundClip: 'text',
-								}}
-							>
-								@ UC Berkeley
-							</span>
+						<h3 className="mb-4 text-2xl font-bold">
+							<span>MEng in Mechanical Engineering @ </span>
+							<span style={{ color: '#3B7EA1' }}>UC </span>
+							<span style={{ color: '#FDB515' }}>Berkeley</span>
 						</h3>
 
-						<p className="text-muted-foreground mb-6">
-							I'm a dedicated engineering student with a passion for innovation and problem-solving.
-							My academic journey has equipped me with strong technical skills and a deep understanding
-							of engineering principles that I apply to real-world challenges.
+						<p className="mb-6 text-muted-foreground">
+							I'm a dedicated engineering student with a passion for innovation and
+							problem-solving. My academic journey has equipped me with strong technical
+							skills and a deep understanding of engineering principles that I apply to
+							real-world challenges.
 						</p>
 
 						<div className="grid grid-cols-2 gap-4 mb-6">
