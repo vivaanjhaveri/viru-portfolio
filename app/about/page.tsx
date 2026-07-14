@@ -21,7 +21,7 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I'm a Master of Mechanical Engineering, specialising in Product Design and Controls at The University of California, Berkeley. Previously, I was an Integrated Engineering graduate, with Distinction, from The University of British Columbia, passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. Growing up, I took inspiration from my Father, a former Mechanical Engineer, and found myself constantly tinkering and disassembling devices to figure out how they work. My passion for Physics only further drove me towards the Sciences and Engineering.
+							I'm a Master of Mechanical Engineering, specialising in Product Design & Control of Robotic and Autonomous Systems at The University of California, Berkeley. Previously, I was an Integrated Engineering graduate, with Distinction, from The University of British Columbia, passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. Growing up, I took inspiration from my Father, a former Mechanical Engineer, and found myself constantly tinkering and disassembling devices to figure out how they work. My passion for Physics only further drove me towards the Sciences and Engineering.
 						</p>
 						<p className="text-lg text-muted-foreground"> 
 							I’ve worked on projects in robotics, smart monitoring, gas detection systems, and renewable energy, focusing on design optimization, simulation workflows, prototyping, and real-time control systems. 
