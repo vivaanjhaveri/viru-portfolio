@@ -59,7 +59,7 @@ export const experiences: Experience[] = [
 		company: 'Critical Environment Technologies',
 		location: 'Delta, Canada',
 		startDate: 'January 2026',
-		endDate: 'Present',
+		endDate: 'June 2026',
 		description: [
 			'Assisted Application Engineering Team and troubleshooted Gas Controllers and Detectors with Root Cause Analysis.',
 			'Analysed Floorplans with Bluebeam and AutoCAD to efficiently structure ASHRAE and CSA compliant Gas Detection Systems.',
