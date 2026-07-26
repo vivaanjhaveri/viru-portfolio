@@ -246,8 +246,8 @@ export const education: Education[] = [
 			'N/A',
 		],
 		courses: [
-			'<b>MECENG 206A:</b> Introduction to Robotics <b><i>(N/A)</i></b>',
 			'<b>MECENG C231A:</b> Experiential Advanced Control Design I <b><i>(N/A)</i></b>',
+			'<b>MECENG C232:</b> Advanced Control Systems I <b><i>(N/A)</i></b>',
 			'<b>MECENG 235:</b> Design of Microprocessor-Based Mechanical Systems <b><i>(N/A)</i></b>',
 			'<b>MECENG 239:</b> Robotic Locomotion <b><i>(N/A)</i></b>',
 		],
