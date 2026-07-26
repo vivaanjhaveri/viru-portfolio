@@ -273,10 +273,11 @@ export const education: Education[] = [
 			'<b>MECH 463:</b> Mechanical Vibrations <b><i>(A-)</i></b>',
 			'<b>MECH 478:</b> Internal Combustion Engines <b><i>(A)</i></b>',
 			'<b>ELEC 204:</b> Linear Circuits <b><i>(A+)</i></b>',
+			'<b>ELEC 315:</b> Electronic Materials and Devices <b><i>(A)</i></b>',
 			'<b>ELEC 341:</b> Systems and Control <b><i>(B+)</i></b>',
 			'<b>ELEC 344:</b> Applied Electronics and Electromechanics<b><i>(A-)</i></b>',
 			'<b>ELEC 352:</b> Electric Energy Systems <b><i>(B)</i></b>',
-			'<b>ELEC 315:</b> Electronic Materials and Devices <b><i>(A)</i></b>',
+			
 		],
 	},
 	{
