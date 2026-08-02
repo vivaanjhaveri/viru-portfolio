@@ -122,7 +122,7 @@ export const projects: Project[] = [
 		preview_description:
 			'Mitigated deflections with Finite Element Analysis simulations, validating enclosure strength and greenlighting mass manufacturing.',
 		description:
-			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensure its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, on SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This mesh-convergent simulation was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
+			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensuring its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, on SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This mesh-convergent simulation was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
 		images: [
 			{ src: '/images/projects/fea/enclosure.png', caption: '<b>SolidWorks Sheet-metal Enclosure</b>' },
 			{ src: '/images/projects/fea/deflection.png', caption: '<b>Deflections Visualised</b>' },
@@ -154,7 +154,7 @@ export const projects: Project[] = [
 		preview_description:
 			'A fully student designed and manufactured six-wheel rover built to restore and maintain peak solar panel performance funded by UBC\'s Alma Mater Society Sustainability Fund.',
 		description:
-			'As a part of UBC Integrated Engineering\'s 4th Year Capstone, the team and I fully designed a 12 kg, six-wheel rover to restore and maintain peak solar panel performance. This project recieved a generous grant from the Alma Mater Society (AMS) Sustainaibility Fund. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its innovative Rope & Rail Guidance System, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
+			'As a part of UBC Integrated Engineering\'s 4th Year Capstone, the team and I fully designed a 12 kg, six-wheel rover to restore and maintain peak solar panel performance. This project received a generous grant from the Alma Mater Society (AMS) Sustainability Fund. Dust and grime can cut photovoltaic efficiency by up to 30%, so this robot tackles the problem with dual cleaning rollers and a diaphragm-pump spray system, evenly applying cleaning solution through a 110° nozzle. Its innovative Rope & Rail Guidance System, Hall-encoded drive motors, and 3D-printed wheel cores deliver secure traction and precise dead-reckoning navigation—even on slick, angled glass.',
 		images: [
 			{ src: '/images/projects/robot/solar.png', caption: '<b>Final CAD Model</b>' },
 			{ src: '/images/projects/robot/full_assembly.png', caption: '<b>Full Assembly of Robot</b>' },
