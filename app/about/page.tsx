@@ -63,7 +63,7 @@ export default function AboutPage() {
 							<CardContent className="p-6 space-y-4">
 								<h3 className="text-xl font-semibold">Education</h3>
 								<p className="text-muted-foreground">
-									Master of Mechanical Engineering at UC Berkeley, specialising in Product Design and Controls. Graduated with Distinction in Integrated Engineering, during undergraduate studies and specialised in Mechanical and Electrical Engineering at The University of British Columbia.
+									Master of Mechanical Engineering at UC Berkeley, specialising in Product Design and Control of Robotic and Autonomous Systems. Graduated with Distinction in Integrated Engineering, during undergraduate studies and specialised in Mechanical and Electrical Engineering at The University of British Columbia.
 								</p>
 							</CardContent>
 						</Card>
