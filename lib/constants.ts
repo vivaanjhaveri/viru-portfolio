@@ -55,8 +55,8 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
-		title: 'Group Leader – Sustainable Energy',
-		company: 'Affinity Group, UC Berkeley',
+		title: 'Group Leader – Sustainable Energy Affinity Group',
+		company: 'Fung Institute For Engineering Leadership, UC Berkeley',
 		location: 'Berkeley, CA, United States of America',
 		startDate: 'August 2026',
 		endDate: 'Current',
