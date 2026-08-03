@@ -55,9 +55,22 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
+		title: 'Group Leader – Sustainable Energy',
+		company: 'Affinity Group, UC Berkeley',
+		location: 'Berkeley, CA, United States of America',
+		startDate: 'August 2026',
+		endDate: 'Current',
+		description: [
+			'Led recruitment and coordinated community engagement activities, related to Sustainable Energy industry designs and practices, with the Career Development Team.',
+			'Hosted ‘Industry Networking’ and ‘Professional Development’ events with Affinity Group members to raise community awareness and share latest trends about careers in sustainable and renewable energy.',
+			'Managed a tight event planning budget, and ensured operating budget compliance across all events.'
+		],
+		technologies: [ 'AutoCAD', 'Visio', 'Root Cause Analysis', 'Bluebeam Revu', 'Business Central ERP'],
+	},
+	{
 		title: 'Application Engineer',
 		company: 'Critical Environment Technologies',
-		location: 'Delta, Canada',
+		location: 'Delta, BC, Canada',
 		startDate: 'January 2026',
 		endDate: 'June 2026',
 		description: [
@@ -162,7 +175,7 @@ export const projects: Project[] = [
 			{ src: '/images/projects/robot/circuit.png', caption: '<b>Circuit Wiring Diagram</b>\n\nDifferent voltage environments were needed for each system to ensure safe operation.\n\n24V: Drum and Rail Motors,\n\n12V: Locomotion Motors and Soap Pumps,\n\n5V: Teensy,\n\n3.3V: ESP' },
 			{ src: '/images/projects/robot/io.png', caption: '<b>IO Pin Diagram</b>' },
 		],
-		tags: ['SolidWorks', 'Machine Design', 'CNC Milling', '3D Printing', 'ESP32', 'Teensy', 'Embedded Systems', 'C++', 'Soldering', 'Circuit Design'],
+		tags: ['SolidWorks', 'Fusion 360', 'Machine Design', 'CNC Milling', '3D Printing', 'ESP32', 'Teensy', 'Embedded Systems', 'C++', 'Soldering', 'Circuit Design'],
 	},
 	{
 		id: 'datacenter-human-machine-interface',
