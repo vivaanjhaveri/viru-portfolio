@@ -65,7 +65,7 @@ export const experiences: Experience[] = [
 			'Hosted ‘Industry Networking’ and ‘Professional Development’ events with Affinity Group members to raise community awareness and share latest trends about careers in sustainable and renewable energy.',
 			'Managed a tight event planning budget, and ensured operating budget compliance across all events.'
 		],
-		technologies: [ 'AutoCAD', 'Visio', 'Root Cause Analysis', 'Bluebeam Revu', 'Business Central ERP'],
+		technologies: [ 'Excel', 'Event Planning', 'Leadership', 'Budget Management', 'Sustainable Energy Practices'],
 	},
 	{
 		title: 'Application Engineer',
