@@ -160,29 +160,29 @@ export type Project = {
 export const projects: Project[] = [
 		{
 		id: 'formula-e-space-frame',
-		title: 'FSAE Space Frame Chassis Design Analysis',
+		title: 'FSAE Chassis Design & Analysis',
 		preview_description:
-			'Designed a FSAE-complaint Formula E Space Frame Chassis and drove structural refinement with Finite Element Analysis.',
+			'Designed a FSAE-complaint Formula E Space Frame, and drove structural refinement with Finite Element Analysis.',
 		description:
-			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensuring its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, in SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This mesh-convergent simulation was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
+			'Designed and iterated an FSAE-compliant Formula Electric Space Frame Chassis, translating driver packaging, safety regulations, and structural requirements into a manufacturable CAD design. Refined chassis geometry, triangulation, tube selection, and weldment layout using DFM/GD&T principles to improve load paths while maintaining cockpit and competition-rule compliance. Used finite element analysis to evaluate impact loading and identify areas for structural reinforcement or weight reduction, feeding the results back into subsequent design iterations.',
 		images: [
 			{ src: '/images/projects/formulaE/finalchassis.png', caption: '<b>SolidWorks Weldment Space Frame</b>' },
 			{ src: '/images/projects/formulaE/percy.png', caption: '<b>Percy Compliance Visualised</b>' },
-			{ src: '/images/projects/formulaE/frontfea.png', caption: '<b>Front Impact Finite Element Analysis</b>' },
 			{ src: '/images/projects/formulaE/tubes.png', caption: '<b>Size A, B, C, D Compliant Tubing Placement</b>' },
+			{ src: '/images/projects/formulaE/frontfea.png', caption: '<b>Front Impact Finite Element Analysis</b>' },
 			{ src: '/images/projects/formulaE/rearfea.png', caption: '<b>Rear Impact Finite Element Analysis</b>' },
 
 			
 		],
-		tags: ['SolidWorks', 'Ansys Mechanical', 'Static Structural Analysis', 'Finite Element Analysis', 'Computer-Aided Engineering'],
+		tags: ['SolidWorks', 'Ansys Mechanical', 'Design For Manufacturing & Assembly', 'Finite Element Analysis']
 	},
 	{
 		id: 'battery-enclosure-structural-analysis',
 		title: 'Battery Enclosure Structural Analysis',
 		preview_description:
-			'Mitigated deflections with Finite Element Analysis simulations, validating enclosure strength and greenlighting mass manufacturing.',
+			'Mitigated battery enclosure deflections with Finite Element Analysis simulations, validating structural strength and greenlighting mass manufacturing.',
 		description:
-			'Designed and iterated an FSAE-compliant Formula Electric space-frame chassis, translating driver packaging, safety regulations, and structural requirements into a manufacturable CAD design. Refined chassis geometry, triangulation, tube selection, and weldment layout using DFM/GD&T principles to improve load paths while maintaining cockpit and competition-rule compliance. Used finite element analysis to evaluate impact loading and identify areas for structural reinforcement or weight reduction, feeding the results back into subsequent design iterations.',
+			'During my 2nd Co-op at Log9 Materials, I conducted Finite Element Analysis (FEA) on a Battery Energy Storage System (BESS) Enclosure ensuring its structural integrity under various load conditions. Using Ansys Mechanical, I simulated stress, strain, and deflection scenarios to identify potential failure points. Based on the analysis results, I added design modifications, in SolidWorks that mitigated excessive deflections, thereby validating the enclosure\'s strength. This mesh-convergent simulation was crucial in greenlighting the mass manufacturing of the battery enclosure, ensuring it met safety and performance standards.',
 		images: [
 			{ src: '/images/projects/fea/enclosure.png', caption: '<b>SolidWorks Sheet-metal Enclosure</b>' },
 			{ src: '/images/projects/fea/deflection.png', caption: '<b>Deflections Visualised</b>' },
