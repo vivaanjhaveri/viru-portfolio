@@ -56,7 +56,7 @@ export type Experience = {
 export const experiences: Experience[] = [
 	{
 		title: 'Mechanical R&D Engineer',
-		company: 'Autodesk Inc. | University of California, Berkeley Capstone Project',
+		company: 'Autodesk Inc. | UC Berkeley Capstone Project',
 		location: 'Berkeley, CA, United States of America',
 		startDate: 'September 2026',
 		endDate: 'Current',
@@ -71,7 +71,7 @@ export const experiences: Experience[] = [
 
 	{
 		title: 'General Team Member – Chassis',
-		company: 'Formula Electric at Berkeley',
+		company: 'Formula Electric | UC Berkeley',
 		location: 'Berkeley, CA, United States of America',
 		startDate: 'September 2026',
 		endDate: 'Current',
