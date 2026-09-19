@@ -162,7 +162,7 @@ export const projects: Project[] = [
 		id: 'formula-e-space-frame',
 		title: 'FSAE Chassis Design & Analysis',
 		preview_description:
-			'Designed a FSAE-complaint Formula E Space Frame, and drove structural refinement with Finite Element Analysis.',
+			'Designed an FSAE-compliant Formula E Space Frame, and used Finite Element Analysis to drive structural refinement.',
 		description:
 			'Designed and iterated an FSAE-compliant Formula Electric Space Frame Chassis, translating driver packaging, safety regulations, and structural requirements into a manufacturable CAD design. Refined chassis geometry, triangulation, tube selection, and weldment layout using DFM/GD&T principles to improve load paths while maintaining cockpit and competition-rule compliance. Used finite element analysis to evaluate impact loading and identify areas for structural reinforcement or weight reduction, feeding the results back into subsequent design iterations.',
 		images: [
