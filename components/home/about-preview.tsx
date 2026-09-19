@@ -91,8 +91,8 @@ export function AboutPreview() {
 						</h3>
 
 						<p className="mb-6 text-muted-foreground">
-							I'm a dedicated engineering student with a passion for innovation and
-							problem-solving. My academic journey has equipped me with strong technical
+							I'm a dedicated Graduate Mechanical Engineering student with a passion for innovation and
+							problem-solving. My projects, as well as my professional experience, has equipped me with strong technical
 							skills and a deep understanding of engineering principles that I apply to
 							real-world challenges.
 						</p>

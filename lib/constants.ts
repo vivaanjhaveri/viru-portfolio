@@ -55,6 +55,35 @@ export type Experience = {
 
 export const experiences: Experience[] = [
 	{
+		title: 'Mechanical R&D Engineer',
+		company: 'Autodesk Inc. | University of California, Berkeley Capstone Project',
+		location: 'Berkeley, CA, United States of America',
+		startDate: 'September 2026',
+		endDate: 'Current',
+		description: [
+			'Pioneered research into regenerative braking systems for E-bikes using Computer-Aided Engineering methods to conduct a feasibility analysis.',
+			'Manufactured braking system hardware and mechanical systems to test and validate the regenerative braking system design.',
+			'Exectued control tradeoffs to balance regenerative brake torque, energy recovery, battery SoC and cell thermal limits',
+			
+		],
+		technologies: [ 'Inventor', 'Fusion360', 'MATLAB', 'Design For Manufacturing & Assembly', 'Computer-Aidedn Engineering', 'PID Control', 'Battery Management Systems' ],
+	},
+
+	{
+		title: 'General Team Member – Chassis',
+		company: 'Formula Electric at Berkeley',
+		location: 'Berkeley, CA, United States of America',
+		startDate: 'September 2026',
+		endDate: 'Current',
+		description: [
+			'Engineered an FSAE-compliant chassis for a Formula Student Electric racecar, focusing on structural integrity, weight optimization, and manufacturability.',
+			'Utilized Finite Element Analysis to simulate stress distribution and identify potential failure points, ensuring the chassis meets safety standards.',
+			'Optimsed chassis design with Finite Element Analysis results to drive structural modifications, reducing Space Frame weight while maintaining strength and rigidity.',
+		],
+		technologies: [ 'SolidWorks', 'Design For Manufacturing & Assembly', 'Finite Element Analysis', 'Computer-Aided Engineering' ],
+	},
+
+	{
 		title: 'Group Leader – Sustainable Energy Affinity Group',
 		company: 'Fung Institute For Engineering Leadership, UC Berkeley',
 		location: 'Berkeley, CA, United States of America',
@@ -89,7 +118,7 @@ export const experiences: Experience[] = [
 		endDate: 'August 2024',
 		description: [
 			'Assimilated into Log9’s ZappUp team to support battery manufacturing projects via cost analysis, component optimisation, and Computer-Aided Design and optimisation at India’s "Best Energy Start Up" (2022, The Economic Times). ',
-			' Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, Computational Fluid Dynamics, and Finite Element Analysis.',
+			' Worked on proprietary battery manufacturing processes under strict NDA, involving BOM analysis, charge capacity optimisation, CFD, and FEA.',
 		],
 		technologies: ['SolidWorks', 'Excel', 'Ansys Fluent', 'Ansys Mechanical', 'BOM Optimisation', 'Finite Element Analysis', 'Computational Fluid Dynamics'],
 	},
@@ -101,9 +130,9 @@ export const experiences: Experience[] = [
 		endDate: 'December 2023',
 		description: [
 			'Interned under Mitacs Accelerate research-based internship program in collaboration with Capilano University & Hynes Group.',
-			'Research focused on Datacenter electrical consumption and heat management strategies using Computer-Aided Design, Building Information Management, Computational Fluid Dynamics, and Human-Machine Interface design.',
+			'Research focused on Datacenter electrical consumption and heat management strategies using Computational Fluid Dynamics cooling simulations, Computer-Aided Design, Building Information Management, and Human-Machine Interface design.',
 		],
-		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Ansys Fluent', 'Computational Fluid Dynamics', 'Bash', 'OpenStudio', 'TwinCAT 3'],
+		technologies: ['MATLAB', 'SolidWorks', 'OpenFOAM', 'Building Information Management', 'Computational Fluid Dynamics', 'Human-Machine Interface Design', 'TwinCAT 3'],
 	},
 		{
 		title: 'Research and Development Engineer Co-op',

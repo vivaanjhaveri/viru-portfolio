@@ -21,7 +21,7 @@ export default function AboutPage() {
 					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
 						<h1 className="text-4xl font-bold">About Me</h1>
 						<p className="text-lg text-muted-foreground">
-							I'm a Master of Mechanical Engineering, specialising in Product Design & Control of Robotic and Autonomous Systems at The University of California, Berkeley. Previously, I was an Integrated Engineering graduate, with Distinction, from The University of British Columbia, passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. Growing up, I took inspiration from my Father, a former Mechanical Engineer, and found myself constantly tinkering and disassembling devices to figure out how they work. My passion for Physics only further drove me towards the Sciences and Engineering.
+							I'm a Master of Mechanical Engineering, specialising in Product Design, going the extra academic mile and gunning for the Control of Robotic and Autonomous Systems Tech+PLUS Certificate at the <span className="font-bold text-gradient"> 'World's #1 Ranked Public University' – University of California, Berkeley. </span> Currently, I am working with Autodesk to conduct a feasibility and prototyping R&D study on regenerative braking for E-Bikes while also being a parrt of <span className="font-bold text-gradient"> Berkeley's biggest engineering design team, Formula Electric. </span> Previously, I was an Integrated Engineering graduate, with Distinction, from The University of British Columbia, passionate about combining mechanical design, electronics, and computational analysis to create innovative solutions. Growing up, I took inspiration from my Father, a former Mechanical Engineer, and found myself constantly tinkering and disassembling devices to figure out how they work. My passion for Physics only further drove me towards the Sciences and Engineering.
 						</p>
 						<p className="text-lg text-muted-foreground"> 
 							I’ve worked on projects in robotics, smart monitoring, gas detection systems, and renewable energy, focusing on design optimization, simulation workflows, prototyping, and real-time control systems. 
@@ -35,7 +35,7 @@ export default function AboutPage() {
 						<p className="text-muted-foreground">
 						I began my professional journey at Log9 Materials, where I worked on high-impact, 
 						  <span className="font-bold text-gradient"> confidential </span>
-						(Computational Fluid Dynamics and Finite Element Analysis) projects, later joined Hynes Group as an HVAC Research Assistant (Building Information Management, Computational Fluid Dynamics), and was subsequently invited back to Log9. I believe my call-backs symbolise and endorse the value of my early contributions, my work ethic, and my resourcefulness.
+						(Finite Element Analysis) projects, later joined Hynes Group as an HVAC Research Assistant (Building Information Management, Computational Fluid Dynamics), and was subsequently invited back to Log9. I believe my call-backs symbolise and endorse the value of my early contributions, my work ethic, and my resourcefulness.
 					</p>
 					</div>
 					</motion.div>
@@ -63,7 +63,7 @@ export default function AboutPage() {
 							<CardContent className="p-6 space-y-4">
 								<h3 className="text-xl font-semibold">Education</h3>
 								<p className="text-muted-foreground">
-									Master of Mechanical Engineering at UC Berkeley, specialising in Product Design and Control of Robotic and Autonomous Systems. Graduated with Distinction in Integrated Engineering, during undergraduate studies and specialised in Mechanical and Electrical Engineering at The University of British Columbia.
+									Master of Mechanical Engineering at UC Berkeley, specialising in Product Design and Control of Robotic and Autonomous Systems. <span className="font-bold text-gradient">Graduated with Distinction</span>in Integrated Engineering, during undergraduate studies and specialised in Mechanical and Electrical Engineering at The University of British Columbia.
 								</p>
 							</CardContent>
 						</Card>
@@ -74,7 +74,7 @@ export default function AboutPage() {
 							<CardContent className="p-6 space-y-4">
 								<h3 className="text-xl font-semibold">Experience</h3>
 								<p className="text-muted-foreground">
-									Valuable internships and projects with cutting-edge technologies and methodologies. Worked in Industry and in Research domains, demonstrating adaptability in different technical environments.
+									Full-time Engineering work experience coupled with end-to-end project manufacturing experience using cutting-edge technologies and methodologies. Worked in Industry and in Research domains, demonstrating adaptability in different technical environments.
 								</p>
 							</CardContent>
 						</Card>
